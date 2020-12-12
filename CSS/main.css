@@ -7,6 +7,10 @@
     font-family: BlackSingature;
     src: url(../Fonts/BlackSingature.ttf);
 }
+@font-face{
+    font-family: Amarillo;;
+    src: url(../Fonts/Amarillo.ttf);
+}
 *{
     margin: 0;
     padding: 0;
