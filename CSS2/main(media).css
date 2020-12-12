@@ -1,6 +1,6 @@
 /*screen 1420px****/
 
-@media(max-width: 1420px){
+@media only screen and (max-device-width: 1420px){
 
       
     nav {
@@ -30,7 +30,7 @@
 
 /*screen 1000px****/
 
-@media(max-width: 1000px){
+@media only screen and (max-device-width:  1000px){
 
       
     nav {
@@ -50,7 +50,7 @@
 
 /*946px****/
 
-@media(max-width: 946px){
+@media only screen and (max-device-width: 946px){
     .navig {
        
         padding: 50px 0px 30px;
@@ -136,7 +136,7 @@
 }
 
 /**827px***/
-@media(max-width: 827px){
+@media only screen and (max-device-width: 827px){
     
 
     .navig {
@@ -200,7 +200,7 @@
 /*768px---*/
 
 
-@media(max-width :768px){
+@media only screen and (max-device-width :768px){
     
     headnav {
         display: flex;
@@ -611,7 +611,7 @@
 /*666px---*/
 
 
-@media(max-width :666px){
+@media only screen and (max-device-width: 666px){
     .text {
         width: 138%;
         background-position-x: -135px;
@@ -629,7 +629,7 @@
 }
 /*...600px***/
 
-@media(max-width :600px){
+@media only screen and (max-device-width: 600px){
     
     headnav {
         display: flex;
@@ -1033,7 +1033,7 @@
 }   
 /*screen 500px****/
 
-@media(max-width: 500px){
+@media only screen and (max-device-width: 500px){
     
     headnav {
         display: flex;
