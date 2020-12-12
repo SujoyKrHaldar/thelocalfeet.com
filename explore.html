@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/explore.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Explore | thelocalfeet</title>
+</head>
+<body>
+    <div class="about">
+        <div class="brand">
+            <a href="#home"><h1>thelocal<span>feet</span></h1></a>
+        </div>
+
+        <div class="navbar" id="navbar">
+            <ul>
+                <li><a href="index.html" >   Home </a></li>
+                <li><a href="photography.html" >   Photography      </a></li>
+                <li><a href="travel2.html" >  Travel tips & planning   </a></li>
+                <li><a  href="travel.html" >  Travel inspiration   </a></li>
+                <li><a href="contact.html" >  About us   </a></li>
+            </ul>  
+        </div>
+    </div>
+
+    <section class="landing" id="home">
+        <div class="middle">
+            <h1>Destinations</h1>
+        </div>
+        <img class="rellax" src="image/I.jpeg" data-rellax-speed='-3'>
+    </section>
+
+    <div class="second">
+        <div class="up">
+            <h2>Countries</h2>
+        </div>
+        <div class="map">
+            <img src="image/allmap.jpg">
+            
+        </div>
+    </div>
+
+
+    <div class="country">
+        <div class="container">
+            <h1>Explore India</h1>
+            
+            <div class="last">
+                <img src="image/india2.jpg">
+            </div>
+            <a href="India.HTML" class="button">Lets Go</a>
+        </div>
+    
+        
+    
+        <div class="container">
+            <h1>Explore Vietnam</h1>
+            <div class="last last2">
+                <img src="image/f.jpg">
+            </div>
+            <a href="Vietnam.html" class="button A">Lets Go</a>
+        </div>
+    </div>    
+    
+    <div class="about4">
+        <div class="brand">
+            <a href="#home"><h2>thelocal<span>feet</span></h2></a>
+        </div>
+        <di class="nav">
+            <ul>
+                <li><a href="photography.html" >  Photography     </a></li>
+                <li><a href="travel2.html" >  Travel tips & planning   </a></li>
+                <li><a  href="travel.html" >  Travel inspiration   </a></li>
+                <li><a href="contact.html" >  Contact us   </a></li>
+            </ul>  
+        </di>
+        <div class="icon">
+            <a href="https://www.facebook.com/thelocalfeet" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/thelocalfeet/?hl=en" class="fa fa-instagram"></a>
+        </div>
+        <div class="copyright">
+            <p>&copy;2020 thelocalfeet. All rights reserved.</p>
+        </div>
+    </div>
+    
+    <script src="rellax.min.js"></script>
+    <script type="text/javascript">
+            var rellax = new Rellax('.rellax');
+            window.addEventListener("scroll",function(){
+                var navbar = document.getElementById("navbar");
+                
+                navbar.classList.toggle("sticky", window.scrollY > 1000)
+            });
+    </script>
+</body>
+</html>

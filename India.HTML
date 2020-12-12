@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>India Diaries | thelocalfeet</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/India.CSS" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    </head>
+    <body onload="myFunction()">
+        <div id="loading">
+            <h1>Come with us</h1>
+            
+        </div>
+        <div class="greet">
+            <h1>Lets Explore India</h1>
+        </div>
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><h2>thelocalfeet</h2></a>
+                </div>
+                <nav>
+                    <a href="#" class="hide-desktop">
+                        <img src="image/menu.png" class="menu" id="menu">
+                    </a>
+                    <ul class="show-desktop hide-mobile">
+                        <li><a href="explore.html" >  Explore     </a></li>
+                        <li><a href="photography.html" >  Photography     </a></li>
+                        <li><a href="travel2.html" >  Travel tips & planning   </a></li>
+                        <li><a  href="travel.html" >  Travel inspiration   </a></li>
+                        <li><a href="contact.html" >  About us   </a></li>
+                    </ul>  
+                </nav>
+            </div>
+        </header>
+        <div class="navig hide-mobile" id="navbar">
+            
+            <ul  id="navbar" >
+                <li id="exit" class="exit-btn ">
+                    <img src="image/cross.png" >
+                </li>
+                <li><a href="explore.html" >  Explore     </a></li>
+                <li><a href="photography.html" >  Photography     </a></li>
+                <li><a href="travel2.html" >  Travel tips & planning   </a></li>
+                <li><a  href="travel.html" >  Travel inspiration   </a></li>
+                <li><a href="contact.html" >  About us   </a></li>
+            </ul>
+        </div>
+        <section id="home">
+            <div class="text">
+                <h2 class="rellax" data-rellax-speed='2'>Exploring</h2>
+                <h3 class="rellax" data-rellax-speed='2'> <span>India</span></h3>
+            </div>
+            <img class="rellax" src="image/india2.jpg" data-rellax-speed='-3'>
+        </section>
+        <div class="white">
+            <div class="container">
+                <div class="sec">
+                    <div class="layout">
+                        <img src="img/5.jpg">
+                    </div>
+                   
+                    <div class="overlay">   
+                        <h1>Best food trip in INDIA</h1> 
+                        <p>Top places to find mouth-watering dishes in India. Must try Goan cuisine, Lucknow Awadhi cuisine, Israeli cuisine in India, Tibetan cuisine in India</p>
+                        <a href="blog2.html" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="sec">
+                    <div class="layout">
+                        <img src="img/7.jpg">
+                    </div>
+                    
+                    <div class="overlay">  
+                        <h1>Elephanta cave</h1>  
+                        <p>Elephanta Caves. Visit these rock cut temples to explore more Indian art and architecture </p>
+                        <a href="blog4.html" class="button b2">Read more</a>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="about4">
+            <div class="brand">
+                <a href="#home"><h2>thelocal<span>feet</span></h2></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="explore.html" >  Explore     </a></li>
+                    <li><a href="photography.html" >  Photography     </a></li>
+                    <li><a href="travel2.html" >  Travel tips & planning   </a></li>
+                    <li><a href="travel.html" >  Travel inspiration   </a></li>
+                    <li><a href="contact.html#contact" >  Contact us   </a></li>
+                </ul>  
+            </div>
+            <div class="icon">
+                <a href="https://www.facebook.com/thelocalfeet" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/thelocalfeet/?hl=en" class="fa fa-instagram"></a>
+            </div>
+            <div class="copyright">
+                <p>&copy;2020 thelocalfeet. All rights reserved.</p>
+            </div>
+        </div>
+        
+        <script src="rellax.min.js"></script>
+        <script type="text/javascript">
+            var rellax = new Rellax('.rellax');
+            /*window.addEventListener("scroll",function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 500)
+            })*/
+
+
+            var menu = document.getElementById('menu');
+            var exit = document.getElementById('exit');
+            var nav = document.getElementById('navbar');
+            menu.addEventListener('click', function(e){
+                nav.classList.toggle('hide-mobile');
+                e.preventDefault();
+            })
+            exit.addEventListener('click', function(e){
+                nav.classList.toggle('hide-mobile');
+                e.preventDefault();
+            })
+            /*****************************Loader********************************/
+            var preloader = document.getElementById('loading');
+            function myFunction(){
+                
+                preloader.style.opacity='0';
+            } 
+            
+            /**************************loading animation********************/
+            TweenMax.to(".greet", 2, {
+                delay: 1,
+                top: "-100%",
+                ease: Expo.easeInOut
+            })
+            TweenMax.to(".greet h1", 2, {
+                opacity: 0,
+                y: -60,
+                ease: Expo.easeInOut
+            })   
+        </script>
+    </body>
+</html>
