@@ -1,7 +1,7 @@
 
 /*screen 1482px****/
 
-@media screen and (max-width: 1482px){
+@media only screen and (max-device-width: 1482px) , only screen and (max-device-height: 640px) {
     
     .para2 {
         color: #b7b7b7;
@@ -54,7 +54,7 @@
 }
 
 /*screen 1301px****/
-@media screen and (max-width: 1301px){
+@media only screen and (max-device-width: 1301px){
 
 
 
