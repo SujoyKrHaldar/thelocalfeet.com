@@ -27,6 +27,7 @@ body{
 html{
     scroll-behavior:smooth;    
 }
+
 /***********************************************************************************************/
 /*******************************************Scrollbar***********************************/
 
@@ -68,6 +69,7 @@ div#loading img {
 }
 .pagetransition {
     position: fixed;
+   
     width: 100%;
     height: 100%;
     z-index: 500;
@@ -78,41 +80,14 @@ div#loading img {
     background: #020202;
     pointer-events: none;
     
-    /*animation: 5s slide cubic-bezier(0.82, 0, 0.11, 1.01);*/
-}
-/*@keyframes slide{
-    0%{
-        height: 100%;
-    }
-    50%{
-        height: 100%;
-    }
-    100%{
-        height: 0%;
-    }
-}*/
+} 
 .pagetransition h1{
     font-size: 50px;
     opacity: 1;
     pointer-events: none;
-    /*animation: 3s exit ease-in ;*/
-}
-/*@keyframes exit{
-    0%{ opacity: 0;
-        transform:translateY(0) ;
+   
     }
-    20%{
-        opacity: 1;
-        transform:translateY(0)
-    }
-    65%{
-        opacity: 1;
-        transform:translateY(0)
-    }
-    100%{opacity: 0;
-        transform:translateY(-100px);
-    }
-}*/
+
 
 /**********************************************************************/
 /*************************Mob navigation***********************************/
@@ -178,44 +153,7 @@ headnav{
         transform: translateY(0px);
     }*/
 }
-/*.text{
-    background: url(../image/text.png)no-repeat 50% 50%;
-    position: absolute;
-    background-size: contain;
-    width: 100%;
-    height: 100%;
-    top: -29px;
-    animation:3s blend;
-    animation-delay: 1s;
-}*/
-/*.text {
-    background: url(../image/text.png)no-repeat 50% 50%;
-    position: absolute;
-    background-size: cover;
-    width: 67%;
-    height: 100%;
-    margin: auto;
-    left: -45px;
-    right: 0;
-    top: -35px;
-    animation: 3s blend;
-    animation-delay: 1s;
-}
-@keyframes blend{
-    0%{
-        opacity: 1;
-        transform: scale(1.5);
-        background-color: #000000;
-        /*z-index: 100;
-    }
-   
-    100%{
-        opacity: 1;
-        transform: scale(1);
-        background-color: #00000000;
-        /*z-index: 3;
-    }
-}*/
+
 .midway{
     background: url(../image/75.png)no-repeat 50% 50%;
     /*background-size: cover;
@@ -228,7 +166,7 @@ headnav{
     height: 135%;
     margin-top: -134px;
    /* z-index: 4;*/
-    animation:2s mid;
+    /*animation:2s mid;
 }
 @keyframes mid{
     0%{
@@ -241,7 +179,7 @@ headnav{
         opacity: 1;
         transform: scale(1);
         background-color: #00000000;
-    }
+    }*/
 }
 .frontback{
     background: url(../image/25.png)no-repeat 50% 50%;
@@ -255,7 +193,7 @@ headnav{
     height: 149%;
     top: 0;
     margin-top: -268px;
-    animation:2s frontb;
+    /*animation:2s frontb;
 }
 @keyframes frontb{
     0%{
@@ -268,7 +206,7 @@ headnav{
         opacity: 1;
         transform: scale(1);
         background-color: #00000000;
-    }
+    }*/
 }
 .front {
     background: url(../image/10.png) no-repeat 50% 50%;
@@ -281,7 +219,7 @@ headnav{
     /* z-index: 6; */
     height: 156%;
     /* margin-top: -412px; */
-    animation: 2s fadeout;
+    /*animation: 2s fadeout;
 }
 @keyframes fadeout{
     0%{
@@ -294,7 +232,7 @@ headnav{
         opacity: 1;
         transform: scale(1);
         background-color: #00000000;
-    }
+    }*/
 }
 .parallex:before {
     content: '';
@@ -632,10 +570,6 @@ h1.head::after {
     width: 100%;
     text-align: center;
     color: white;
-    /*background-image: url(../image/contact1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;*/
-    height: 100%;
     padding: 55px;
 }
 .blogs h2 {
@@ -663,17 +597,25 @@ h1.head::after {
     width: 16px;
     position: absolute;
 }
-.container{
+/*.container{
     width: 1200px;
     min-height: 500px;
    
     margin: 38px auto;
     display: flex;
+}*/
+.container {
+    width: 100%;
+    margin: 38px auto;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    flex-wrap: wrap;
 }
 .container .box{
     position: relative;
     width: 300px;
-    height: 307px;
+    height: 400px;
     background-color: #111111;
     margin: 10px;
     box-sizing: border-box;
@@ -683,7 +625,7 @@ h1.head::after {
 .imgBox{
     position: relative;
     overflow: hidden;
-    height: 306px;
+    height: 300px;
 }
 .box:before {
     position: absolute;
@@ -705,7 +647,7 @@ h1.head::after {
 .box::after {
     position: absolute;
     content: '';
-    height: 0px;
+    height: 50px;
     z-index: 2;
     bottom: 0px;
    
@@ -714,11 +656,7 @@ h1.head::after {
     background: linear-gradient(to top, #000000b0, #00000000);
     transition:all 1s ease;
 }
-.box:hover::after{
-    height: 40px;
-    opacity: 1;
-    transition:all 1s ease;
-}
+
 .img {
     
     max-width: 188%;
@@ -764,29 +702,23 @@ h1.head::after {
     opacity: 0.7;
     
 }
-.container .box .details {
-    position: absolute;
-    background-color: #40404061;
-    bottom: 20px;
-    left: 20px;
-    font-size: 20px;
-    right: 20px;
-}
+
 .container .box .details .content2 {
     position: absolute;
-    top: 50%;
-    left: 12%;
-    transform: translateY(6px);
+    top: 62%;
+    
+    padding: 10px;
+    transform: translateY(15px);
     opacity: 0;
     z-index: 3;
-    font-size: 15px;
-    text-align: left;
+    font-size: 20px;
+    
     transition: all 1s ease-in-out;
 }
 .box:hover .details .content2{
     opacity: 1;
     z-index: 3;
-    transform: translateY(-11px);
+    transform: translateY(0px);
     transition: all 1s cubic-bezier(0.4, 0, 1, 1);
 }
 p.content3 {
@@ -795,7 +727,7 @@ p.content3 {
     line-height: 25px;
     font-size: 16px;
     color: #a2a2a2;
-    
+    padding: 20px 10px;
     transition: 0.5s ease;
 }
 /**************************************************************************************/
@@ -811,10 +743,11 @@ p.content3 {
     flex-direction: column;
     text-align: center;
     padding: 57px;
+    padding-bottom: 102px;
 }
 .achievement h2 {
-    padding: 45px;
     font-size: 30px;
+    padding: 45px;
     display: inline-block;
 }
 .achievement h2:after {
@@ -836,14 +769,19 @@ p.content3 {
     position: absolute;
 }
 .achievement p {
-    padding: 40px;
-    color: #a0a0a0;
-    font-size: 20px;
+    padding: 18px;
+    color: #666666;
+    font-size: 25px;
+    background: #0e0e0e;
     position: relative;
     z-index: 40;
     width: 86%;
+    text-align: left;
     margin: auto;
-    line-height: 32px;
+    line-height: 44px;
+}
+.achievement p span {
+    color: #ffffffb8;
 }
 /************************************************************************/
 /*************************************************************Hr tages***************************************/
@@ -859,7 +797,7 @@ hr {
     background-image: linear-gradient(to right, rgb(255 255 255 / 0%), rgb(255 255 255 / 31%), rgb(255 255 255 / 0%));
 }
 hr.hr-1.top {
-    margin-top: 42px;
+    margin-top: 0px;
 }
 hr.hr-end{
     margin: 20px;
@@ -894,15 +832,17 @@ hr.hr-end{
     color: rgb(255, 255, 255);
     transition: 0.5s  ease-in;
 }
-.navbar{
+.navbar {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-top: 14px;
+    /* margin-top: 14px; */
     position: relative;
+    padding: 40px;
     height: 82px;
+    margin-bottom: 20px;
     transition: .5s;
 }
 .navbar ul li{
@@ -965,3 +905,7 @@ hr.hr-end{
     padding: 20px;
 }
 /*****************************************************************************************/
+
+
+
+
