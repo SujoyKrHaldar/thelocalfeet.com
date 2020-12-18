@@ -202,7 +202,7 @@ nav ul li a:hover{
     width: 100%;
 }
 
-.content:before {                                                        /*part2*/
+.content:before {                                                      
     content: none;
     width: 7%;
     height: 49px;
@@ -251,7 +251,7 @@ nav ul li a:hover{
     }
 }
 
-.para {                               /*part2*/
+.para {                             
     display: flex;
     margin-top: 100px;
     color: #ffffff;
@@ -261,7 +261,7 @@ nav ul li a:hover{
     padding: 20px;
     font-size: 50px;
 }
-.para2 {                             /*part2*/
+.para2 {                        
     color: #b7b7b7;
     font-size: 20px;
     line-height: 30px;
@@ -428,7 +428,6 @@ img.btn-img:hover{
     content: 'travel';
     position: absolute;
     font-size: 157px;
-    font-weight: 700;
     right: 0;
     z-index: -1;
     top: 28px;
@@ -523,7 +522,7 @@ img.btn-img:hover{
 }
 .Bnw {
     width: 50%;
-    height: 63vh;
+    height: 64vh;
     margin-top: 80px;
     overflow: hidden;
 }
@@ -541,7 +540,6 @@ img.btn-img:hover{
     content: 'Journey';
     color: transparent;
     font-size: 157px;
-    font-weight: 700;
     right: 0;
     -webkit-text-stroke: 2px #c8c8c8;
     position: absolute;
@@ -551,7 +549,8 @@ img.btn-img:hover{
 }
 .Bnw img {
     width: 103%;
-    margin-top: 79px;
+    height: 128%;
+    margin-top: 94px;
     object-fit: cover;
     transform: scale(1.05) translateX(-42px);
     pointer-events: none;
@@ -573,7 +572,6 @@ img.btn-img:hover{
     top: 0;
     content: 'Contact';
     font-size: 171px;
-    font-weight: 700;
     color: #edb41414;
     -webkit-text-stroke: 2px gainsboro;
     position: absolute;
@@ -585,7 +583,6 @@ img.btn-img:hover{
     bottom: 0;
     font-size: 377px;
     z-index: -1;
-    font-weight: 700;
     color: #edb41414;
     -webkit-text-stroke: 2px gainsboro;
 }

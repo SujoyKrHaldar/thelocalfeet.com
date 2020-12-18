@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="CSS/contact.css" type="text/css">
         <link rel="stylesheet" href="CSS2/contact(media).css" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     </head>
     <body id="scroll-container" onload="myFunction()">
@@ -76,7 +77,7 @@
 
         <div class="second">
            
-                <h3 >
+                <h3 data-aos="fade-up" >
                     What interests us about travel?
                 </h3>
                 <div class="sec">
@@ -93,7 +94,7 @@
         
         <div class=" Journey" >
             <div class="boxflex">
-                <h3 >
+                <h3 data-aos="fade-right" >
                     Our Journey:
                 </h3>
                 <div class="thi">
@@ -129,18 +130,23 @@
 <div class="testmain">
     <div id="testimony" class="testimony">
         <div class="im2" >
-            <img oncontextmenu="return false" src="image/unnamed.jpg">
+            <img data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" oncontextmenu="return false" src="image/unnamed.jpg">
         </div>
         <div class="blurp">
             
             <div class="text">
-                <h1>About us</h1>
+                <h1 data-aos="fade-down" >About us</h1>
                 <p>Mayuri and Shubha, the Storyteller-Photographer duo have been traveling places around the world, since tying the knot in 2014: 2 continents, 4 countries, and countless cities. 
                     Explore with us to see this beautiful mama earth! 
                 </p>
             </div>
             <div class="im">
-                <img oncontextmenu="return false" src="image/grppic.jpg">
+                <img data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0" oncontextmenu="return false" src="image/grppic.jpg">
             </div>
             
         
@@ -194,10 +200,16 @@
         </div>
       
         <script src="rellax.min.js"></script>
-        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+   
         <script type="text/javascript">
             var rellax = new Rellax('.rellax');
-            
+            AOS.init({
+                disable: false,
+                once: true, 
+                mirror: false,
+            });
             //...........form............//
 
             function validate(){

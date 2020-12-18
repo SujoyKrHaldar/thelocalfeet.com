@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=1024">
         <title>THELOCALFEET | HOME</title>
         <meta name="description" content="You might not always fit in to experience the offbeat travel, but you must try😊. Follow thelocalfeet, conceptualized by Mayuri & Shubha in 2018 to get more insight into sustainable travel.">
-        <link rel="stylesheet" type="text/css" href="CSS/main.css">  
+        <link rel="stylesheet" type="text/css" href="CSS/index.css">  
         <link rel="stylesheet" type="text/css" href="CSS2/main(media).css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     </head>
@@ -47,7 +47,7 @@
                 </ul>
             </div>
 <!------------------------------------------------------landing page-->  
-         
+         <a href="#next">
             <section id="home" class="section parallex" >
                 <div class="rellax faraway"data-rellax-speed='-3'></div>
                 <div class="rellax clouds"data-rellax-speed='-2'></div>
@@ -60,41 +60,51 @@
                 <div class="rellax front" data-rellax-speed='3'></div>
                 
                 <div class="scroll-downs">
-                    <div class="mousey">
-                      <div class="scroller"></div>
-                    </div>
+                    <p>Tap Anywhere</p>
                 </div>
             </section>
-<!---------------------------------------------------------------introduction page--> 
-    <div class="section">          
+         </a>
+            
+<!---------------------------------------------------------------introduction page-->       
 <!--------------------------------------------------------------navigation web-->            
-            <div class=" subject">
+            <div id="next" class=" subject">
                 <div class=" navig"  >
                     <div class="logo">
-                        <h3>thelocalfeet</h3>
+                        <h3 data-aos="fade-up"
+                        data-aos-duration="3000">thelocalfeet</h3>
                     </div>
-                    <hr class="hr-1 top">
-                    <nav >
+                    <hr data-aos="fade-up"
+                    data-aos-duration="3000" class="hr-1 top">
+
+                    <nav data-aos="fade-up"
+                    data-aos-duration="3000">
                         <ul>
                             <li><a href="explore.html" >  Explore     </a></li>
-                            <li><a id="btn" href="photography.html" >  Photography     </a></li>
+                            <li><a href="photography.html" >  Photography     </a></li>
                             <li><a href="travel2.html" >  Travel tips & planning   </a></li>
                             <li><a  href="travel.html" >  Travel inspiration   </a></li>
                             <li><a href="contact.html" >  About us   </a></li>
                         </ul>  
                     </nav>
-                    <hr class="hr-1 down">
+                    <hr data-aos="fade-up"
+                    data-aos-duration="3000" class="hr-1 down">
                 </div>
 <!--------------------------------------------------------------------------------------------->
 <!----------------------------------------------------------------2nd page-->                
                 <div class=" profile"  >
-                    <h1 class=" head"  > Our Travel Style</h1>
+                    <h1 class=" head" data-aos="fade-up"
+                    data-aos-duration="3000" > Our Travel Style</h1>
                     
-                    <div class=" context"  >
+                    <div class=" context" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"  >
                        
                        <p>“You only live once, but if you do it right, once is enough” –</p>
                        <p>We follow this spirit while we travel. We are deeply passionate about travel, but now the hobby turned into our profession. Since 2014, We have been traveling like an experimental traveler and love to explore new places. We are not much comfortable in traveling like a tourist with a fixed itinerary. Gradually, we started to like the way we travel and come up with an idea to start our own travel blog, thelocalfeet, where we share our offbeat experiences and discoveries on travel, food, and local culture. </p>
-                       <a href="contact.html" class="btn">Read more </a>
+                       <a  href="contact.html" class="btn" data-aos="fade-zoom-in"
+                       data-aos-easing="ease-in-back"
+                       data-aos-delay="300"
+                       data-aos-offset="0" >Read more </a>
                     </div>
                     
                    
@@ -194,10 +204,15 @@
             <hr class="hr-1 hr-end">
      
         
-        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="rellax.min.js"></script>
         <script type="text/javascript">
             var rellax = new Rellax('.rellax');
+            AOS.init({
+                disable: false,
+                once: true, 
+                mirror: false,
+            });
 
             
 //mobile menu------------------------------------------------------------//
@@ -237,7 +252,13 @@
                 ease: Expo.easeInOut
             })
             
+/*****************************************scroll-down******************************/
 
+            window.addEventListener("scroll",function(){
+                console.log(scrollY);
+                var scroll = document.querySelector(".scroll-downs");
+                scroll.classList.toggle("sticky", window.scrollY > 0);
+            })
             
         </script>
     </body>

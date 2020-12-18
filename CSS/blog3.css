@@ -18,7 +18,7 @@
 }
 body{
     transform-style: preserve-3d ;
-    overflow-y: scroll;
+    overflow-y: overlay;
     overflow-x: hidden;  
     font-family: Caviar Dreams;
     -webkit-touch-callout: none; /* iOS Safari */
@@ -35,8 +35,8 @@ html{
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background:rgb(255, 255, 255) ;
-    opacity: .1;
+    background:rgba(255, 255, 255, 0) ;
+   
 }
 ::-webkit-scrollbar-thumb {
     background:rgb(196, 196, 196); 
