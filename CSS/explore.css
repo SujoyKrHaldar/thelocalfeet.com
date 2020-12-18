@@ -506,24 +506,6 @@ button:hover{
   padding: 40px;
 }
 
-/*.counries:before {
-  content: '';
-  width: 31%;
-  height: 100%;
-  position: absolute;
-  background:#c99f86;
-}*/
-
-/*.counries:after {
-  content: '';
-  width: 31%;
-    height: 6%;
-    position: absolute;
-    background: #3a3837;
-  top: 128%;
- left: 0;
-}*/
-
 .box {
   height: 100%;
   overflow: hidden;
@@ -629,27 +611,6 @@ a.button:hover:before{
   width: 28%;
 }
 
-
-div#india:before {
-    content: '01';
-    bottom: -31px;
-    right: 263px;
-    font-size: 172px;
-    font-family: auto;
-    position: absolute;
-    color: transparent;
-    -webkit-text-stroke: 2px #ffffff;
-}
-div#vietnum:before {
-    content: '02';
-    bottom: -31px;
-    right: 263px;
-    font-size: 172px;
-    font-family: auto;
-    position: absolute;
-    color: transparent;
-    -webkit-text-stroke: 2px#fcfcfc5e;
-}
 
 div#india:after {
   content: '';
