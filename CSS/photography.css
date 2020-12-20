@@ -132,9 +132,10 @@ header{
   justify-content: space-between;
   padding: 32px;
   margin: auto;
-  background-color: #0000002b;
+  background-color: #00000038;
   position: absolute;
-  height: 197px;
+  backdrop-filter: blur(3px);
+  height: 179px;
   transition: .5s;
   animation: 5s fade ease-out;
 }
@@ -308,7 +309,7 @@ h1.paraboy2 {
 @keyframes plack2{
     0%{
         opacity: 0;
-        transform: translate(-11px, -100px);
+        transform: translate(45px, -100px);
     }
     65%
     {
@@ -316,7 +317,7 @@ h1.paraboy2 {
     }
     100%{
         opacity: 1;
-        transform: translate(-11px, 0px);
+        transform: translate(45px, 0px);
     }
 }
 
