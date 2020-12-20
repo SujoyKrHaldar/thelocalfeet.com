@@ -132,9 +132,7 @@ header{
   justify-content: space-between;
   padding: 32px;
   margin: auto;
-  background-color: #00000038;
   position: absolute;
-  backdrop-filter: blur(3px);
   height: 179px;
   transition: .5s;
   animation: 5s fade ease-out;
@@ -171,6 +169,38 @@ header{
 .logo a:hover{
     color: rgb(255, 255, 255);
     transition: 0.3s ease-in;
+}
+nav {
+  background: #0000000f;
+  
+    margin-top: 78px;
+  
+    display: flex;
+    width: 65%;
+    justify-content: center;
+    position: absolute;
+    backdrop-filter: blur(3px);
+   
+    height: 89px;
+   
+    align-items: center;
+    
+    text-align: center;
+}
+nav.sticky {
+  position: fixed;
+  margin-top: 0;
+  width: 100%;
+  top: 0;
+  backdrop-filter: blur(5px);
+  background: #040404c2;
+  
+}
+nav.stickz {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease;
 }
 nav ul li{
     list-style: none;
@@ -363,23 +393,12 @@ h1.paraboy2 {
 .gallery-title {
   padding: 95px;
   text-align: center;
-  position: sticky;
+  position: relative;
   font-size: 56px;
-  top: 0;
-  z-index: 2;
   font-weight: bold;
   transition: 0.5s ease-in-out;
 }
-.gallery-title.sticky {
-  padding: 38px;
-  background: #000000d4;
-  font-size: 45px;
-  transition: 0.7s ease-in-out;
-}
-.gallery-title.stickz {
-  opacity: 0;
-  transition: 0.7s ease-in-out;
-}
+
   .gallery-images {
     display: grid;
     grid-gap: 30px 20px;
@@ -493,12 +512,11 @@ img{
 }
 .gallery-image__media:hover{
   transform: scale(1.1);
-  filter: grayscale(100%);
+  opacity: 0.8;
   transition: 0.3s cubic-bezier(1, 0.01, 0.16, 0.99);
 }
 .gallery-image__preview .gallery-image__media:hover{
   transform: scale(1);
-  filter: grayscale(0%);
   transition: 0.5s ease-in-out;
 }
 /**************************************************************************************/
@@ -507,7 +525,7 @@ img{
 hr {
   background-color: rgb(0, 0, 0);
   padding: 0;
-  margin: 0px 20px;
+  margin: 0px 10px;
 }
 
 hr.hr-1 {
@@ -519,7 +537,7 @@ hr.hr-1.top {
   margin-top: 0px;
 }
 hr.hr-end{
-  margin: 20px;
+  margin: 10px;
 }
 /****************************************************************************************************/
 /*********************************Footer***********************************/

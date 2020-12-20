@@ -61,7 +61,8 @@ div#loading {
     font-size: 46px;
     pointer-events: none;
     height: 100%;
-    animation: 3s ht cubic-bezier(0, 0.02, 0, 1.2);
+    transition: 0.5s ease-out;
+    /*animation: 3s ht cubic-bezier(0, 0.02, 0, 1.2);
     animation-delay: 5s;
 }
 @keyframes ht{
@@ -70,7 +71,7 @@ div#loading {
     }
     100%{
         height: 0%;
-    }
+    }*/
 }
 .overlay {
     position: fixed;

@@ -783,7 +783,6 @@ p.content3 {
     font-size: 25px;
     background: #0e0e0e;
     position: relative;
-    z-index: 40;
     width: 86%;
     text-align: left;
     margin: auto;
@@ -863,6 +862,7 @@ hr.hr-end{
     color: rgb(179, 179, 179);
     font-size: 18px;
     padding: 15px;
+    cursor: pointer;
     transition: .5s;
 }
 .navbar ul li a:hover{

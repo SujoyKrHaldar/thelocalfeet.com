@@ -327,10 +327,10 @@
               <li><a href="AboutUs.html#contact" >  Contact us   </a></li>
             </ul>  
         </div>
-        <div class="icon">
+ <!--   <div class="icon">
             <a href="https://www.facebook.com/thelocalfeet" class="fa fa-facebook"></a>
             <a href="https://www.instagram.com/thelocalfeet/?hl=en" class="fa fa-instagram"></a>
-        </div>
+        </div>-->
         <div class="copyright">
             <p>&copy;2020 thelocalfeet. All rights reserved.</p>
         </div>
@@ -349,10 +349,10 @@
 //////////////////////////////////////gallery name/////////////////////////////
 
             window.addEventListener("scroll",function(){
-                var fade = document.getElementById("name");
+                var fade = document.querySelector("nav");
                 console.log(scrollY)
-                fade.classList.toggle("sticky", window.scrollY > 800);
-                fade.classList.toggle("stickz", window.scrollY > 2648);
+                fade.classList.toggle("sticky", window.scrollY > 99);
+                fade.classList.toggle("stickz", window.scrollY > 2375);
             });
 
 // IMAGE SLIDES & COUNTER////////////////////////////////////////////

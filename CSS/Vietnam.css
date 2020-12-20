@@ -53,8 +53,9 @@ div#loading {
     justify-content: center;
     align-items: center;
     font-size: 46px;
+    transition: 0.5s ease-out;
     height: 100%;
-    animation: 3s ht cubic-bezier(0, 0.02, 0, 1.2);
+    /*animation: 3s ht cubic-bezier(0, 0.02, 0, 1.2);
     animation-delay: 5s;
 }
 @keyframes ht{
@@ -63,7 +64,7 @@ div#loading {
     }
     100%{
         height: 0%;
-    }
+    }*/
 }
 div#loading h1 {
     font-size: 37px;
