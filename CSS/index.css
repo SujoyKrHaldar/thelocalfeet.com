@@ -864,7 +864,6 @@ hr.hr-end{
     font-size: 18px;
     padding: 15px;
     transition: .5s;
-    cursor: pointer;
 }
 .navbar ul li a:hover{
     color: rgb(255, 255, 255);
