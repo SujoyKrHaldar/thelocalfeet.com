@@ -38,15 +38,14 @@ html{
     background:transparent ;
 }
 ::-webkit-scrollbar-thumb {
-    background:rgb(196, 196, 196); 
+    background:rgb(0, 0, 0); 
     
     transition: 1s ease-in-out;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(156, 156, 156); 
+    background: rgb(46, 46, 46); 
     transition: 2s ease-in-out;
 }
-
 /****************************************************************************************/
 /***************************************************************************************************/
 /*******************************************************Loading screen******************************/
@@ -56,6 +55,7 @@ div#loading {
     z-index: 800000;
     width: 100%;
     color: rgb(255, 255, 255);
+    pointer-events: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -336,13 +336,13 @@ img.goi {
 .container h3 {
     padding-bottom: 33px;
     font-size: 33px;
-    color: #404e58;
+    color: #1b1b1b;
 }
 .container p {
     padding: 05px 0;
     font-size: 22px;
     line-height: 36px;
-    color: #354049;
+    color: #161616;
 }
 .container  span{
     font-weight: 800;

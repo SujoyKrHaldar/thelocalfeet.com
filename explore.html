@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-  
+  <link rel="stylesheet" href="CSS2/explore(media).css">
   <link rel="stylesheet" href="CSS/explore.css">
   <title>Explore | thelocalfeet</title>
 </head>
@@ -20,11 +20,21 @@
     <img src="image/explore.gif">
   </div>
   <div class="greet">
-    <h1>thelocalfeet</h1>
+    <h1>thelocalfeet</h1> 
+    <h3>DESTINATION</h3>
   </div>
 
 
   <!----------------------------------navigation-->
+
+  <div class="none mobile">
+    <h1>Open this website in your PC</h1>
+    <p>This website is not responsive yet<br>
+    We are working on it
+    </p>
+  </div>
+
+
   <header>
     <div class="navbar">
         <div class="logo">
@@ -33,10 +43,10 @@
         <nav>
             <ul>
             
-            <li><a href="photography.html" >  Photography     </a></li>
-            <li><a href="travel.html" >  Travel tips & planning   </a></li>
-            <li><a  href="travel2.html" >  Travel inspiration   </a></li>
-            <li><a href="contact.html" >  About us   </a></li>
+            <li><a href="Photography.html" >  Photography     </a></li>
+            <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
+            <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
+            <li><a href="AboutUs.html" >  About us   </a></li>
             </ul>  
         </nav>
     </div>
@@ -125,10 +135,10 @@
         <ul>
             <li><a href="index.html" >  Home   </a></li>
             
-            <li><a href="photography.html" >  Photography     </a></li>
-            <li><a href="travel.html" >  Travel tips & planning   </a></li>
-            <li><a  href="travel.html" >  Travel inspiration   </a></li>
-            <li><a href="contact.html#contact" >  Contact Us   </a></li>
+            <li><a href="Photography.html" >  Photography     </a></li>
+            <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
+            <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
+            <li><a href="AboutUs.html#contact" >  Contact Us   </a></li>
             
         </ul>  
     </di>
@@ -171,6 +181,13 @@
                 y: -60,
                 ease: Expo.easeInOut
             })           
+
+            TweenMax.to(".greet h3", 2, {
+                delay: 0.5,
+                opacity: 0,
+                y: -60,
+                ease: Expo.easeInOut
+            })   
 /******************************************Fadein animation on landing page**************************/
             window.addEventListener("scroll",function(){
                 var fade = document.getElementById("fade");
@@ -232,15 +249,6 @@
       y: 22,
       ease: Expo.easeInOut
     })
-    
-
-    /*TweenMax.to('.karina', 2, {
-      delay: 1.5,
-      width: '800px',
-      ease: Power2.easeInOut
-    })*/
-
-
     TweenMax.from('.name', 2, {
       delay: 2.5,
       x: -600,

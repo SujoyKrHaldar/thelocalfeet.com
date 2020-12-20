@@ -7,14 +7,18 @@
     <title>Photography</title>
     <link rel="stylesheet" href="CSS/photography.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 </head>
 <body onload="myFunction()">
 
 <!----------------------------------------------------Loading-->  
     <div id="loading">
-        <h1>Come with us</h1>
+      <img src="image/ph.gif">
     </div>
-    <div class="loadscreen"></div>
+    <div class="greet">
+      <h1>thelocalfeet</h1> 
+      <h3>Photography</h3>
+    </div>
 
 <!----------------------------------------------------------Navbar-->    
     <header>
@@ -25,31 +29,30 @@
             <nav>
                 <ul>
                 
-                <li><a href="explore.html" >  Explore     </a></li>
-                <li><a href="travel.html" >  Travel tips & planning   </a></li>
-                <li><a  href="travel2.html" >  Travel inspiration   </a></li>
-                <li><a href="contact.html" >  Contact us   </a></li>
+                <li><a href="Explore.html" >  Explore     </a></li>
+                <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
+                <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
+                <li><a href="AboutUs.html" >  About us   </a></li>
                 </ul>  
             </nav>
         </div>
     </header>
 
 <!---------------------------------------------------------------Landing Page-->    
-    <section class="landing">
+    <section id="home" class="landing">
         <div class="content">
             <div class="para">
-                <h1 class="paraboy">P</h1>
-                <h1 class="paraboy2">hotography</h1>
+                <h1 class="paraboy2">Photography</h1>
             </div>
             <p > can be a speaker of an introvert soul</p>
             
         </div>
-        <div class="slideshowContainer">
+        <div class="rellax slideshowContainer" data-rellax-speed='1'>
   
             
-              <img class="imageSlides" src="./Photography/landing1.jpeg" alt="beach side city view">
-              <img class="imageSlides" src="./Photography/landing2.jpeg" alt="leaf on the ground">
-              <img class="imageSlides" src="./Photography/landing3.jpeg" alt="lake surrounded by mountains">
+              <img class="imageSlides img1" src="./Photography/landing1.jpeg" alt="beach side city view">
+              <img class="imageSlides img2" src="./Photography/landing2.jpeg" alt="leaf on the ground">
+              <img class="imageSlides img3" src="./Photography/landing3.jpeg" alt="lake surrounded by mountains">
               
 
               
@@ -61,7 +64,7 @@
 
     <section  class="gallery">
 
-        <h2 class="gallery-title">Gallery</h2>
+        <h2 id="name"  class="gallery-title">Gallery</h2>
       
       
       
@@ -309,19 +312,21 @@
 
 
 <!-------------------------------------------------Footer-->
-      <div class="about4">
-        <div class="brand">
-            <a href="#home"><h2>thelocalfeet</h2></a>
+
+    <hr class="hr-1">
+    <div class=" about4">
+        <div class="logo">
+            <a href="#home">thelocalfeet</a>
         </div>
-        <di class="nav">
+        <div class="navba">
             <ul>
-                <li><a href="index.html" >  Home  </a></li>
-                <li><a href="explore.html" >  Explore     </a></li>
-                <li><a href="travel.html" >  Travel tips & planning   </a></li>
-                <li><a  href="travel2.html" >  Travel inspiration   </a></li>
-                <li><a href="contact.html" >  Contact us   </a></li>
+              <li><a href="index.html" >  Home  </a></li>
+              <li><a href="Explore.html" >  Explore     </a></li>
+              <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
+              <li><a  href="Travel-Tips.html" >  Travel inspiration   </a></li>
+              <li><a href="AboutUs.html#contact" >  Contact us   </a></li>
             </ul>  
-        </di>
+        </div>
         <div class="icon">
             <a href="https://www.facebook.com/thelocalfeet" class="fa fa-facebook"></a>
             <a href="https://www.instagram.com/thelocalfeet/?hl=en" class="fa fa-instagram"></a>
@@ -330,15 +335,25 @@
             <p>&copy;2020 thelocalfeet. All rights reserved.</p>
         </div>
     </div>
+    <hr class="hr-1 hr-end">
 
+    <script src="rellax.min.js"></script>
     <script type="text/javascript">
-            //var rellax = new Rellax('.rellax');
+            var rellax = new Rellax('.rellax');
       
 //Loading/////////////////////////////////////////////////////////////            
             var preloader = document.getElementById('loading');
             function myFunction(){
                 preloader.style.opacity='0';
             } 
+//////////////////////////////////////gallery name/////////////////////////////
+
+            window.addEventListener("scroll",function(){
+                var fade = document.getElementById("name");
+                console.log(scrollY)
+                fade.classList.toggle("sticky", window.scrollY > 800);
+                fade.classList.toggle("stickz", window.scrollY > 2648);
+            });
 
 // IMAGE SLIDES & COUNTER////////////////////////////////////////////
 
@@ -395,6 +410,25 @@
           	}
             }, false);
 /////////////////////////////////////////////////////////////////////////////////
+
+//////loading animation//////////////////////////
+
+            TweenMax.to(".greet", 2, {
+                delay: 1,
+                top: "-100%",
+                ease: Expo.easeInOut
+            })
+            TweenMax.to(".greet h1", 2, {
+                opacity: 0,
+                y: -60,
+                ease: Expo.easeInOut
+            })   
+            TweenMax.to(".greet h3", 2, {
+                delay: 0.5,
+                opacity: 0,
+                y: -60,
+                ease: Expo.easeInOut
+            })   
 
 
         </script>

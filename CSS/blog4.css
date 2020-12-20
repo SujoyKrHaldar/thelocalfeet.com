@@ -39,12 +39,12 @@ html{
     background:rgba(255, 255, 255, 0) ;
 }
 ::-webkit-scrollbar-thumb {
-    background:rgb(196, 196, 196); 
+    background:rgb(0, 0, 0); 
     
     transition: 1s ease-in-out;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(156, 156, 156); 
+    background: rgb(46, 46, 46); 
     transition: 2s ease-in-out;
 }
 /****************************************************************************************/
@@ -60,6 +60,7 @@ div#loading {
     justify-content: center;
     align-items: center;
     font-size: 46px;
+    pointer-events: none;
     height: 100%;
     animation: 3s ht cubic-bezier(0, 0.02, 0, 1.2);
     animation-delay: 5s;
@@ -294,13 +295,14 @@ section img{
 .container h3 {
     padding-bottom: 33px;
     font-size: 33px;
-    color: #404e58;
+    font-weight: 700;
+    color: #000000;
 }
 .container p {
     padding: 05px 0;
     font-size: 22px;
     line-height: 36px;
-    color: #3d678b;
+    color: #181818;
 }
 /*******************************************************************/
 /****************************Footer********************************/

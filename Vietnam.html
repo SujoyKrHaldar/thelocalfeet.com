@@ -15,7 +15,8 @@
             <h1>Come with us</h1>
         </div>
         <div class="greet">
-            <h1>Lets Explore Vietnam</h1>
+            <h1>Lets Explore</h1> 
+            <h3>Vietnam</h3>
         </div>
         <header>
             <div class="navbar">
@@ -27,11 +28,11 @@
                         <img src="image/menu.png" class="menu" id="menu">
                     </a>
                     <ul class="show-desktop hide-mobile"  >
-                        <li><a href="explore.html" >  Explore     </a></li>
-                        <li><a href="photography.html" >  Photography     </a></li>
-                        <li><a href="travel2.html" >  Travel tips & planning   </a></li>
-                        <li><a  href="travel.html" >  Travel inspiration   </a></li>
-                        <li><a href="contact.html" >  About us   </a></li>
+                        <li><a href="Explore.html" >  Explore     </a></li>
+                        <li><a href="Photography.html" >  Photography     </a></li>
+                        <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
+                        <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
+                        <li><a href="AboutUs.html" >  About us   </a></li>
                     </ul>  
                 </nav>
             </div>
@@ -42,11 +43,11 @@
                 <li id="exit" class="exit-btn ">
                     <img src="image/cross.png" >
                 </li>
-                <li><a href="explore.html" >  Explore     </a></li>
-                <li><a href="photography.html" >  Photography     </a></li>
-                <li><a href="travel2.html" >  Travel tips & planning   </a></li>
-                <li><a  href="travel.html" >  Travel inspiration   </a></li>
-                <li><a href="contact.html" >  About us   </a></li>
+                <li><a href="Explore.html" >  Explore     </a></li>
+                <li><a href="Photography.html" >  Photography     </a></li>
+                <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
+                <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
+                <li><a href="AboutUs.html" >  About us   </a></li>
             </ul>
         </div>
         
@@ -55,35 +56,32 @@
             <div class="text">
                 <h2 class="rellax" data-rellax-speed='2'>Exploring <br> <span>Vietnam</span></h2>
             </div>
-            <img class="rellax" src="image/vietnam.jpeg" data-rellax-speed='-3'>
+            <img  src="image/vietnam.jpeg" >
         </section>
-        <div class="white">
-            <div class="container">
-                <div class="sec">
-                    <div class="layout">
-                        <img  src="img/2.jpg"> 
-                    </div>
-                   
-                    <div class="overlay">  
-                        <h1>Local food in VIETNAM</h1>  
-                        <p>Top places to find mouth-watering dishes in Vietnam. Must try local dishes CA PHE TRUNG,  BANH RAN, BANH MI, PHO etc. Also visit KEM HO TAY is a famous ice cream shop in Hanoi.</p>
-                        <a href="blog1.html" class="button">Read more</a>
-                    </div>
+
+
+        <div class="sec">
+            <div class="box">
+                <div class="content">
+                    <h1>Local food in VIETNAM</h1>
+                    <p>Top places to find mouth-watering dishes in Vietnam. Must try local dishes CA PHE TRUNG,  BANH RAN, BANH MI, PHO etc. Also visit KEM HO TAY is a famous ice cream shop in Hanoi</p>
+                    <a href="Local-food-in-VIETNAM.html" class="btn">Read more</a>
                 </div>
-                <div class="sec">
-                    <div class="layout">
-                        <img src="img/6.jpg">
-                    </div>
-                    
-                    <div class="overlay">   
-                        <h1>Things to do in HANOI</h1> 
-                        <p>Top attractions in Hanoi. Visit Hoan kiem lake, Tran Quoc Pagoda, Hoa Lo Prison, Water Puppet Theatre, Old Quarter </p>
-                        <a href="blog3.html" class="button b2">Read more</a>
-                    </div>
+                <div class="imgb">
+                    <img src="img/2.jpg">
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgb">
+                    <img src="img/6.jpg">
+                </div>
+                <div class="content">
+                    <h1>Things to do in HANOI</h1>
+                    <p>Top attractions in Hanoi. Visit Hoan kiem lake, Tran Quoc Pagoda, Hoa Lo Prison, Water Puppet Theatre, Old Quarter</p>
+                    <a href="Things-to-do-in-HANOI.html" class="btn">Read more</a>
                 </div>
                 
             </div>
-
         </div>
         <div class="about4">
             <div class="brand">
@@ -91,11 +89,11 @@
             </div>
             <di class="nav">
                 <ul>
-                    <li><a href="explore.html" >  Explore     </a></li>
-                    <li><a href="photography.html" >  Photography     </a></li>
-                    <li><a href="travel2.html" >  Travel tips & planning   </a></li>
-                    <li><a  href="travel.html" >  Travel inspiration   </a></li>
-                    <li><a href="contact.html#contact" >  Contact us   </a></li>
+                    <li><a href="Explore.html" >  Explore     </a></li>
+                    <li><a href="Photography.html" >  Photography     </a></li>
+                    <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
+                    <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
+                    <li><a href="AboutUs.html#contact" >  Contact us   </a></li>
                 </ul>  
             </di>
             <div class="icon">
@@ -139,6 +137,12 @@
                 ease: Expo.easeInOut
             })
             TweenMax.to(".greet h1", 2, {
+                opacity: 0,
+                y: -60,
+                ease: Expo.easeInOut
+            })   
+            TweenMax.to(".greet h3", 2, {
+                delay: 0.5,
                 opacity: 0,
                 y: -60,
                 ease: Expo.easeInOut

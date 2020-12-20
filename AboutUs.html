@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>CONTACT US</title>
+        <title>ABOUT US</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="CSS/contact.css" type="text/css">
@@ -12,12 +12,14 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     </head>
-    <body id="scroll-container" onload="myFunction()">
+    <body  onload="myFunction()">
 
 <!--------------------------------------------------------Loading-->        
-        <div class="overlay">
-            <h1>thelocalfeet</h1>
-        </div>
+<div class="greet">
+    <h1>thelocalfeet</h1> 
+    <h3>Who We Are</h3>
+  </div>
+
         <div id="loading" class="loader">
             <img src="image/circle.gif">
         </div>
@@ -31,10 +33,10 @@
                 <nav>
                     <ul>
                         
-                        <li><a href="explore.html" >  Explore     </a></li>
-                        <li><a href="photography.html" >  Photography     </a></li>
-                        <li><a href="travel.html" >  Travel tips & planning   </a></li>
-                        <li><a  href="travel.html" >  Travel inspiration   </a></li>
+                        <li><a href="Explore.html" >  Explore     </a></li>
+                        <li><a href="Photography.html" >  Photography     </a></li>
+                        <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
+                        <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
                         
                     </ul>  
                 </nav>
@@ -119,8 +121,8 @@
                 <form autocomplete="off"  id="myform" action="https://formspree.io/f/xknpgerl" onsubmit = "return validate();" method="post">      
                     <input name="name" id="name" type="text" class="feedback-input" autocomplete="off"  placeholder="Name" />   
                     <input name="email" id="email" type="text" class="feedback-input" autocomplete="off"  placeholder="Email" />
-                    <input class="feedback-input" type="tel" id="phone" name="phone" autocomplete="off"  placeholder="Contact no.">
-                    <textarea name="text" id="msg" class="feedback-input" placeholder="Your massage"></textarea>
+                    <input class="feedback-input" type="tel" id="phone" name="phone" autocomplete="off"  placeholder="Contact No">
+                    <textarea name="text" id="msg" class="feedback-input" placeholder="Your Message"></textarea>
                     <input type="submit"  value="SUBMIT">
                 </form>
             </div>
@@ -183,10 +185,10 @@
             <di class="nav">
                 <ul>
                     <li><a href="index.html" >  Home   </a></li>
-                    <li><a href="explore.html" >  Explore     </a></li>
-                    <li><a href="photography.html" >  Photography     </a></li>
-                    <li><a href="travel.html" >  Travel tips & planning   </a></li>
-                    <li><a  href="travel.html" >  Travel inspiration   </a></li>
+                    <li><a href="Explore.html" >  Explore     </a></li>
+                    <li><a href="Photography.html" >  Photography     </a></li>
+                    <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
+                    <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
                     
                 </ul>  
             </di>
@@ -296,16 +298,22 @@
             //....loading animation.....//
 
 
-            TweenMax.to(".overlay", 2, {
+            TweenMax.to(".greet", 2, {
                 delay: 1,
                 top: "-100%",
                 ease: Expo.easeInOut
             })
-            TweenMax.to(".overlay h1", 2, {
+            TweenMax.to(".greet h1", 2, {
                 opacity: 0,
                 y: -60,
                 ease: Expo.easeInOut
-            })
+            })   
+            TweenMax.to(".greet h3", 2, {
+                delay: 0.5,
+                opacity: 0,
+                y: -60,
+                ease: Expo.easeInOut
+            })   
             TweenMax.to('.para', 3, {
                 delay: 2.2,
                 y: 0,

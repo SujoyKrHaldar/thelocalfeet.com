@@ -38,12 +38,12 @@ html{
     background: transparent ;
 }
 ::-webkit-scrollbar-thumb {
-    background:rgb(196, 196, 196); 
+    background:rgb(0, 0, 0); 
     
     transition: 1s ease-in-out;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(156, 156, 156); 
+    background: rgb(46, 46, 46); 
     transition: 2s ease-in-out;
 }
 /***************************************************************************/
@@ -59,6 +59,7 @@ div#loading {
     justify-content: center;
     align-items: center;
     font-size: 46px;
+    pointer-events: none;
     height: 100%;
     animation: 3s ht cubic-bezier(0, 0.02, 0, 1.2);
     animation-delay: 5s;
@@ -307,12 +308,14 @@ section img{
     font-size: 30px;
     color: #393939;
 }
-
+.bold{
+    font-weight: bolder;
+}
 .container p {
     padding: 05px 0;
     font-size: 22px;
     line-height: 36px;
-    color: #272727;
+    color: #353535;
 }
 .sub {
     overflow: hidden;
@@ -322,7 +325,7 @@ section img{
 }
 .sub p {
     font-size: 21px;
-    color: #4b677f;
+    color: #4b4b4b;
 }
 
 .sub span {
