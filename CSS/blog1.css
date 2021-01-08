@@ -469,3 +469,84 @@ p.leftpart {
     padding: 20px;
 }
 /**********************************************************************/
+
+
+.errormsg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(31, 31, 31);
+    padding: 2rem;
+    font-size: 3em;
+    text-align: center;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    line-height: 70px;
+    overflow: hidden;
+}
+.col{
+    color: rgb(156, 156, 156);
+}
+.errormsg p{
+    animation: all 0.5s animate ease-in;
+}
+.errormsg h1 {
+    padding: 3rem;
+    color: #dc8439;
+    font-size: 146px;
+    font-family: monospace;
+    animation: all 1s animate ease-in;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.desktop-off{
+    display: none;
+    pointer-events: none;
+}
+
+
+
+@media only screen and (max-width: 1340px) {
+    .mobile-on{
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .about4{
+        display: none;
+    }
+    .testmain{
+        display: none;
+    }
+    .third{
+        display: none;
+    }
+    .Journey{
+        display: none;
+    }
+    .second{
+        display: none;
+    }
+    .landing{
+        display: none;
+    }
+    
+
+}
+@media only screen and (max-width: 480px){
+    .mobile-on{
+        padding: 2rem; 
+        line-height: 30px;
+        font-size: 1em;
+    }
+}
