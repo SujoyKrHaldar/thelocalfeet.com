@@ -139,33 +139,7 @@ body{
     display: none;
     pointer-events: none;
 }
-@media only screen and (max-width: 1340px) {
-    .mobile-on{
-        display: flex;
-        overflow-y: hidden;
-        overflow-x: hidden;
-    }
-    .about4{
-        display: none;
-    }
-    .testmain{
-        display: none;
-    }
-    .third{
-        display: none;
-    }
-    .Journey{
-        display: none;
-    }
-    .second{
-        display: none;
-    }
-    .landing{
-        display: none;
-    }
-    
 
-}
 /**************************************************************************************/
 /*************************************NAVIGATION BAR*************************************************/
 header{
@@ -1065,3 +1039,33 @@ hr {
     animation: none;
 }
 /********************************************************************************/
+
+
+
+@media only screen and (max-width: 1340px) {
+    .mobile-on{
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .about4{
+        display: none;
+    }
+    .testmain{
+        display: none;
+    }
+    .third{
+        display: none;
+    }
+    .Journey{
+        display: none;
+    }
+    .second{
+        display: none;
+    }
+    .landing{
+        display: none;
+    }
+    
+
+}
