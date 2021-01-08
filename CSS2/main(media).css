@@ -21,13 +21,6 @@
 
 }
 
-
-
-
-
-
-
-
 /*screen 1000px****/
 
 @media only screen and (max-device-width:  1000px){
@@ -185,40 +178,55 @@
         
         transition: 0.5s ease-in;
     }
+    .hide-mobile{
+        display: none;
+        /*animation : mymove 0.5s ease-in;*/
+    }
     ul#navbar {
-        width: 60%;
-        background: #1c2d43;
+        width: 100%;
+        background: #151515;
         margin: auto;
-        margin-top: 80px;
-        height: 84%;
+        height: 100%;
         overflow: hidden;
-    }
-    ul#navbar:before {
-        content: '';
-        position: absolute;
-        width: 25%;
-        z-index: 2;
-        bottom: 40px;
-        height: 30%;
-        background: linear-gradient(90deg, #1c2d43, #db161600);
-    }
-    ul#navbar::after {
-        content: '';
-        position: absolute;
-        width: 27%;
-        z-index: 2;
-        right: 153px;
-        bottom: 40px;
-        height: 30%;
-        background: linear-gradient(-90deg, #1c2d43, transparent);
+        padding: 5rem;
+        text-align: center;
+        
     }
     
     
+    /*@keyframes mymove {
+        0%{
+            height: 0%;
+            opacity: 0;
+         }
+         100%{
+            height: 100%;
+            opacity: 1;
+         }
+      }*/
+      
+    .low-mobile{
+        height: 0%;
+        opacity: 0;
+        pointer-events: none;
+        animation: mynewmove 0.5s ease-in;
+    }
+    @keyframes mynewmove {
+        0%{
+            height: 100%;
+            opacity: 1;
+         }
+         100%{
+            height: 05;
+            opacity: 0;
+         }
+      }
+
     .exit-btn {
         text-align: right;
     }
     .exit-btn img{
-        width: 54px;
+        width: 100px;
         cursor: pointer;
         opacity: 0.6;
         transition:0.2s ease-in ;
@@ -228,33 +236,24 @@
         
         transition:0.3s ease-in ;
     }
-    .hide-mobile{
-        display: none;
-    }
+    
+    
     .navmob ul li{
         list-style: none;
     }
     .navmob ul li a {
         text-decoration: none;
         color: rgb(218, 218, 218);
-        font-size: 24px;
+        font-size: 43px;
         display: block;
-        padding: 20px 44px;
+        padding: 32px 44px;
         font-weight: 500;
         transition: 0.2s ease-in;
     }
     .navmob ul li a:hover{
         color: #ffffff;
     }
-    img.map {
-        width: 87%;
-        position: relative;
-        height: 38%;
-        left: 28px;
-        padding: 23px;
-        object-fit: cover;
-        opacity: 0.7;
-    }
+    
     .clouds {
         background: url(../image/clouds.png) no-repeat 22% 50%;
     }
@@ -485,37 +484,19 @@
         transition: 0.5s ease-in;
     }
     ul#navbar {
-        width: 76%;
-        background: #1c2d43;
+        width: 100%;
+        background: #151515;
         margin: auto;
-        margin-top: 80px;
-        height: 84%;
+        height: 100%;
         overflow: hidden;
+        padding: 5rem;
     }
-    ul#navbar:before {
-        content: '';
-        position: absolute;
-        width: 35%;
-        z-index: 2;
-        bottom: 40px;
-        height: 30%;
-        background: linear-gradient(90deg, #1c2d43, transparent);
-    }
-    ul#navbar::after {
-        content: '';
-        position: absolute;
-        width: 40%;
-        z-index: 2;
-        right: 80px;
-        bottom: 40px;
-        height: 30%;
-        background: linear-gradient(-90deg, #1c2d43, transparent);
-    }
+    
     .exit-btn {
         text-align: right;
     }
     .exit-btn img{
-        width: 54px;
+        width: 100px;
         cursor: pointer;
         opacity: 0.6;
         transition:0.2s ease-in ;
@@ -525,31 +506,15 @@
         
         transition:0.3s ease-in ;
     }
-    .hide-mobile{
-        display: none;
-    }
+    
     .navmob ul li{
         list-style: none;
     }
-    .navmob ul li a {
-        text-decoration: none;
-        color: rgb(218, 218, 218);
-        font-size: 24px;
-        display: block;
-        padding: 20px 44px;
-        font-weight: 500;
-        transition: 0.2s ease-in;
-    }
+    
     .navmob ul li a:hover{
         color: #ffffff;
     }
-    img.map {
-        width: 100%;
-        height: 38%;
-        padding: 23px;
-        object-fit: cover;
-        opacity: 0.7;
-    }
+    
     .clouds {
         background: url(../image/clouds.png) no-repeat 22% 50%;
     }
@@ -769,37 +734,20 @@
         transition: 0.5s ease-in;
     }
     ul#navbar {
-        width: 76%;
-        background: #1c2d43;
+        width: 100%;
+        background: #151515;
         margin: auto;
-        margin-top: 80px;
-        height: 84%;
+        height: 100%;
         overflow: hidden;
+        padding: 5rem;
     }
-    ul#navbar:before {
-        content: '';
-        position: absolute;
-        width: 35%;
-        z-index: 2;
-        bottom: 40px;
-        height: 30%;
-        background: linear-gradient(90deg, #1c2d43, transparent);
-    }
-    ul#navbar::after {
-        content: '';
-        position: absolute;
-        width: 40%;
-        z-index: 2;
-        right: 80px;
-        bottom: 40px;
-        height: 30%;
-        background: linear-gradient(-90deg, #1c2d43, transparent);
-    }
+    
     .exit-btn {
         text-align: right;
+        margin-bottom: 145px;
     }
     .exit-btn img{
-        width: 54px;
+        width: 157px;
         cursor: pointer;
         opacity: 0.6;
         transition:0.2s ease-in ;
@@ -816,24 +764,15 @@
         list-style: none;
     }
     .navmob ul li a {
-        text-decoration: none;
-        color: rgb(218, 218, 218);
-        font-size: 24px;
-        display: block;
-        padding: 20px 44px;
-        font-weight: 500;
-        transition: 0.2s ease-in;
+        
+        font-size: 61px;
+        
+        padding: 71px 44px;
     }
     .navmob ul li a:hover{
         color: #ffffff;
     }
-    img.map {
-        width: 100%;
-        height: 38%;
-        padding: 23px;
-        object-fit: cover;
-        opacity: 0.7;
-    }
+    
     .clouds {
         background: url(../image/clouds.png) no-repeat 22% 50%;
     }

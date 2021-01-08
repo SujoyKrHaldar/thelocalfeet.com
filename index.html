@@ -42,9 +42,6 @@
                     <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
                     <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
                     <li><a href="AboutUs.html" >  About us   </a></li>
-                    <li >
-                        <img class="map" src="image/mapvector.png" >
-                    </li>
                 </ul>
             </div>
 <!------------------------------------------------------landing page-->  
@@ -66,7 +63,9 @@
             </section>
          </a>
             
-<!---------------------------------------------------------------introduction page-->       
+<!---------------------------------------------------------------introduction page-->      
+
+
 <!--------------------------------------------------------------navigation web-->            
             <div id="next" class=" subject">
                 <div class=" navig"  >
@@ -242,10 +241,12 @@
             var nav = document.getElementById('navbar');
             menu.addEventListener('click', function(e){
                 nav.classList.toggle('hide-mobile');
+                
                 e.preventDefault();
             })
             exit.addEventListener('click', function(e){
                 nav.classList.toggle('hide-mobile');
+                
                 e.preventDefault();
             })
 
