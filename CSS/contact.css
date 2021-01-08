@@ -1069,3 +1069,10 @@ hr {
     
 
 }
+@media only screen and (max-width: 480px){
+    .mobile-on{
+        padding: 2rem; 
+        line-height: 30px;
+        font-size: 1em;
+    }
+}
