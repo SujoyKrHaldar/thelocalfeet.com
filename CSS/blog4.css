@@ -21,11 +21,11 @@ body{
     overflow-y: overlay;
     overflow-x: hidden;  
     font-family: Caviar Dreams;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none;   /* Chrome/Safari/Opera */
-    -khtml-user-select: none;    /* Konqueror */
-    -moz-user-select: none;      /* Firefox */
-    -ms-user-select: none;   
+/*    -webkit-touch-callout: none; /* iOS Safari */
+ /*   -webkit-user-select: none;   /* Chrome/Safari/Opera */
+ /*   -khtml-user-select: none;    /* Konqueror */
+ /*   -moz-user-select: none;      /* Firefox */
+ /*   -ms-user-select: none;   */
     
 }
 html{
@@ -47,6 +47,11 @@ html{
     background: rgb(46, 46, 46); 
     transition: 2s ease-in-out;
 }
+
+
+
+
+
 /****************************************************************************************/
 /*******************************************************************************************/
 /********************************Loading************************************************/
@@ -102,11 +107,13 @@ header{
     display: flex;
     justify-content:center ;
     width: 100%;
-    transition: .1s ease-in;
+    transition: .5s ease-in;
 }
 
 .navbar {
     width: 100%;
+    /*width: 1538px;*/
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -115,7 +122,7 @@ header{
     background-color: #5239323b;
     position: absolute;
     height: 82px;
-    transition: .5s;
+    transition: .5s ease-in;
     animation: 5s fade ease-out;
 }
 @keyframes fade{
@@ -128,6 +135,39 @@ header{
         transform: translateY(0);
     }
 }
+
+@media (min-width:500px){
+    .navbar{
+        max-width:400px;
+    }
+}
+
+@media (min-width:576px){
+    .navbar{
+        max-width:540px;
+    }
+}
+@media (min-width: 768px) {
+    .navbar {
+        max-width: 1000px;
+        padding: 8px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .navbar {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .navbar {
+        max-width: 1538px;
+    }
+  }
+
+
+
 .logo a{
     color: rgb(216, 216, 216);
     text-decoration: none;
@@ -166,21 +206,61 @@ nav ul li a:hover{
     background-color: rgba(29, 29, 29, 0.205);
     transition: 0.1s ease-in;
 }
+
+
+.desktop-off{
+    display: none;
+}
 /***********************************************************************/
 /***********************************Landing page****************************/
 section{
     position: relative;
     width: 100%;
-    height: 100vh;
+    margin: auto;
     overflow: hidden;
-    display: flex;
-    pointer-events: none;
-    justify-content: left;
-    align-items: flex-end;
-    /*text-align: center;*/
     background-color: black;
 }
-section h2{
+.intro {
+    width: 100%;
+    /*width: 1538px;*/
+   
+    height: 768px;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+@media (min-width:500px){
+    .intro{
+        max-width:400px;
+    }
+}
+@media (min-width:576px){
+    .intro{
+        max-width:540px;
+    }
+}
+@media (min-width: 768px) {
+    .intro {
+        max-width: 1000px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .intro {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .intro {
+        max-width: 1538px;
+    }
+  }
+
+
+.intro h2{
     position: relative;
     color: rgb(218, 218, 218);
     top: -86px;
@@ -249,15 +329,44 @@ section img{
     padding-bottom: 110px;
     padding-top:35px ;
     overflow: hidden;
-    
+    width: 100%;
 }
 .container{
-    width: 70%;
+    
+    width: 100%;
     margin: auto;
     height: auto;
     text-align: left;
 
 }
+
+@media (min-width:500px){
+    .container{
+        max-width:400px;
+    }
+}
+@media (min-width:576px){
+    .container{
+        max-width:540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1002px;
+    }
+  }
 .overlay{
     width: 100%;
     overflow: hidden;
@@ -307,12 +416,19 @@ section img{
 }
 /*******************************************************************/
 /****************************Footer********************************/
-.about4{
-    position: relative;
+.foot{
     width: 100%;
-    
-    height: 44%;
     background-color: #171717;
+    position: relative;
+    bottom: 0;
+}
+.about4{
+    width: 100%;
+    /*width: 1538px;*/
+    
+    margin: auto;
+    height: 44%;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -320,6 +436,34 @@ section img{
     justify-content: center;
     
 }
+
+@media (min-width:500px){
+    .about4{
+        max-width:400px;
+    }
+}
+@media (min-width:576px){
+    .about4{
+        max-width:540px;
+    }
+}
+@media (min-width: 768px) {
+    .about4 {
+      max-width: 826px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .about4 {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .about4 {
+      max-width:  1538px;
+    }
+  }
 
 .about4 .brand a {
     color: rgb(165, 165, 165);
@@ -336,7 +480,7 @@ section img{
     transition: 0.5s  ease-in;
 }
 .nav {
-    width: 100%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -407,84 +551,224 @@ section img{
     color:rgb(87, 87, 87);
     padding: 20px;
 }
-/******************************************************************************/
+/*******************************************Media***********************************/
+@media (max-width:988px){
 
-.errormsg {
+/*********************************navigation**************/
+.logo a {
+    
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media (max-width:400px){
+
+/*******************************************************Navbar******************************/
+header{
     position: fixed;
-    width: 100%;
+    z-index: 12;
+}
+nav ul{
+    display: none;
+}
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    left: 0;
+}
+.navbar{
+    padding-right: 1px;
+}
+
+
+.navbar.sticky{
+    background-color: rgb(31, 31, 31);
+    transition: 0.5s ease-in;
+    color: white;
+    display: flex;
+    height: 70px;
+    padding-top: 9px;
+}
+/*************************************************Ham nav menu***************************/
+.menu {
+    width: 25%;
     height: 100%;
-    background: rgb(31, 31, 31);
-    padding: 2rem;
-    font-size: 3em;
-    text-align: center;
-    z-index: 10000;
+    overflow: hidden; 
+    
+    padding-bottom: 13px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu img {
+    width: 70%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.navigation {
     display: flex;
     flex-direction: column;
-    color: white;
+    position: fixed;
     align-items: center;
     justify-content: center;
-    line-height: 70px;
-    overflow: hidden;
+    z-index: 10;
+    padding: 30px;
+    width: 100%;
+    border-bottom-left-radius: 33px;
+    border-bottom-right-radius: 33px;
+    height: 537px;
+    background: #1f1f1fde;
+    transform: translateY(-100%);
+    transition: 0.5s cubic-bezier(1, 0.01, 0, 1.01);;
 }
-.col{
-    color: rgb(156, 156, 156);
+.navigation a {
+    text-decoration: none;
+    padding: 15px;
+    font-size: 26px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
 }
-.errormsg p{
-    animation: all 0.5s animate ease-in;
+.navigation.Diam{
+    transform: translateY(0%);
+    transition: 0.5s cubic-bezier(1, 0.01, 0, 1.01);;
+    border-radius: 0px;
 }
-.errormsg h1 {
-    padding: 3rem;
-    color: #dc8439;
-    font-size: 146px;
-    font-family: monospace;
-    animation: all 1s animate ease-in;
-}
-@keyframes animate{
-    0%{
-        opacity: 0;
+/****************************************************landing page**********************************/
+
+    .intro {
+      height: 594px;
     }
-    100%{
-        opacity: 1;
+    .intro h2 {
+        top: -142px;
+        font-size: 48px;
+        line-height: 52px;
+        padding: 38px;
+        margin: 0;
     }
-}
-.desktop-off{
-    display: none;
-    pointer-events: none;
-}
+    section{
+        border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    }
+    section#home:after {
+        top: 44%;
+        position: absolute;
+        content: '';
+        width: 70px;
+        right: 0;
+        height: 133px;
+        background: #ffffff6b;
+        z-index: 2;
+    }
+    section#home:before {
+        top: 44%;
+        position: absolute;
+        content: '';
+        width: 18px;
+        left: 0;
+        height: 133px;
+        background: #ffffff6b;
+        z-index: 2;
+    }
+    section h2 span {
+        font-size: 43px;
+       
+        line-height: 0px; 
+        left: -9px;
+    }
+    section img {
+        animation: 1s fadein cubic-bezier(0, 0.02, 0.57, 0.97);
+    }
+    /*******************************************Blog page******************************************/
+
+
+    .container {
+       padding: 32px;
+    }
+    .white.container:before {
+        content: '';
+        position: absolute;
+        width: 17%;
+        height: 2px;
+        background: #ff9930;
+        left: 42%;
+       
+    }
+    .container h1 {
+        
+        font-size: 34.9px;
+        
+    }
+    .container h1:before {
+       
+        width: 52.5%;
+        height: 10px;
+        left: 0px;
+        bottom: 20px;
+    }
+    .container h3 {
+        padding-bottom: 18px;
+        font-size: 20px;
+        line-height: 31px;
+    }
+    .container p {
+        padding: 05px 0;
+        font-size: 17px;
+        line-height: 24px;
+    }
+    .overlay {
+        margin: 16px 0px;
+    }
 
 
 
-@media only screen and (max-width: 1340px) {
-    .mobile-on{
-        display: flex;
-        overflow-y: hidden;
-        overflow-x: hidden;
+
+    /*********************************************Footer*********************************/
+    .foot{
+        padding: 23px;
+        border-top-left-radius: 23px;
+        border-top-right-radius: 23px;
+        
+    }
+    .nav  {
+        display: none;
+
     }
     .about4{
-        display: none;
+        padding-top: 13px;
     }
-    .testmain{
-        display: none;
+    .about4 .brand a {
+        color: rgb(194, 194, 194);
+       
+        font-size: 14px;
     }
-    .third{
-        display: none;
-    }
-    .Journey{
-        display: none;
-    }
-    .second{
-        display: none;
-    }
-    .landing{
-        display: none;
-    }
-    
-
-}
-@media only screen and (max-width: 480px){
-    .mobile-on{
-        padding: 2rem; 
-        line-height: 30px;
-        font-size: 1em;
+    .copyright p {
+        color: rgb(124 124 124);
+        padding: 16px;
     }
 }

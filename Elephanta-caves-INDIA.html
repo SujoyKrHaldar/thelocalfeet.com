@@ -13,25 +13,16 @@
     </head>
     <body onload="myFunction()">
 
+
+  
 <!--------------------------------------------------------Loading-->        
         <div id="loading">
             <p>Loading...</p>
         </div>
-        <div class="greet">
+        <div class=" greet">
             <h1>thelocalfeet</h1>
         </div>
 <!-----------------------------------------------------Navigation bar-->      
-
-<div class="errormsg desktop-off mobile-on">
-    <h1>!</h1>
-    <p>
-        Please open in your PC device.<br>
-        This page is not Responsive.
-    </p>
-    <p class="col">
-        We are working on it.
-    </p>
-</div>
         <header>
             <div class="navbar">
                 <div class="logo">
@@ -46,18 +37,33 @@
                         <li><a href="AboutUs.html" >  About us   </a></li>
                     </ul>  
                 </nav>
+                <div id="pencet" class="menu desktop-off">
+                    <img  src="image/menu.png">
+                </div>
             </div>
         </header>
-
+        
+       
+        <div class="navigation desktop-off" >
+             <a href="Explore.html#location" >  Explore     </a>
+             <a href="Photography.html" >  Photography     </a>
+             <a href="Travel-Tips.html" >  Travel tips & planning   </a>
+             <a href="Travel-Inspiration.html" >  Travel inspiration   </a>
+             <a href="AboutUs.html" >  About us   </a></li>
+        </div>  
+        
 <!----------------------------------------------------Landing page----->        
         <section id="home">
-            <h2 class="rellax" data-rellax-speed='0'> A hidden island in Mumbai<br> <span>Elephanta <br>caves</span></h2>
+            <div class=" intro">
+                <h2 class="rellax" data-rellax-speed='0'> A hidden island in Mumbai<br> <span>Elephanta <br>caves</span></h2>
+            </div>
+            
             <img class="rellax" src="img/7.png" data-rellax-speed='-6'>    
         </section>
 
 <!-------------------------------------------------------Blog page----->        
 
-        <div  class="white container">
+        <div  class="white container ">
             
                 <h1>Elephanta caves – a hidden island in Mumbai</h1>
                 <h3>A perfect weekend gateway for Mumbaikars</h3>
@@ -81,29 +87,34 @@
         </div>
 
 <!---------------------------------------------------------Footer---------->        
-        <div class="about4">
-            <div class="brand">
-                <a href="#home"><h2>thelocalfeet</h2></a>
+        <div class="foot ">
+            <div class="about4">
+                <div class="brand">
+                    <a href="#home"><h2>thelocalfeet</h2></a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="index.html" >  Home  </a></li>
+                        <li><a href="Explore.html" >  Explore     </a></li>
+                        <li><a href="Photography.html" >  Photography     </a></li>
+                        <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
+                        <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
+                        <li><a href="AboutUs.html#contact" >  Contact us   </a></li>
+                    </ul>  
+                </div>
+        <!--    <div class="icon">
+                    <a href="https://www.facebook.com/thelocalfeet" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/thelocalfeet/?hl=en" class="fa fa-instagram"></a>
+                </div>-->
+                <div class="copyright">
+                    <p>&copy;2020 thelocalfeet. All rights reserved.</p>
+                </div>
             </div>
-            <di class="nav">
-                <ul>
-                    <li><a href="index.html" >  Home  </a></li>
-                    <li><a href="Explore.html" >  Explore     </a></li>
-                    <li><a href="Photography.html" >  Photography     </a></li>
-                    <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
-                    <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
-                    <li><a href="AboutUs.html#contact" >  Contact us   </a></li>
-                </ul>  
-            </di>
-    <!--    <div class="icon">
-                <a href="https://www.facebook.com/thelocalfeet" class="fa fa-facebook"></a>
-                <a href="https://www.instagram.com/thelocalfeet/?hl=en" class="fa fa-instagram"></a>
-            </div>-->
-            <div class="copyright">
-                <p>&copy;2020 thelocalfeet. All rights reserved.</p>
-            </div>
+            
         </div>
 
+
+       
         <script src="rellax.min.js"></script>
         <script type="text/javascript">
             var rellax = new Rellax('.rellax');
@@ -123,6 +134,36 @@
                 y: -60,
                 ease: Expo.easeInOut
             })              
+/************************************************Navigation bar mob***************************/
+            window.addEventListener("scroll",function(){
+                var fade = document.querySelector(".navbar");
+                console.log(scrollY)
+                fade.classList.toggle("sticky", window.scrollY > 569);
+            });
+/********************************************mobile ham nav menu click*********************/
+
+            
+            /*var exit = document.getElementById('exit');
+            var nav = document.getElementById('navbar');
+            menu.addEventListener('click', function(e){
+                nav.classList.toggle('hide-mobile');
+                
+                e.preventDefault();
+            })
+            exit.addEventListener('click', function(e){
+                nav.classList.toggle('hide-mobile');
+                
+                e.preventDefault();
+            });
+            */
+            const clickx= document.getElementById('pencet');
+            const menu = document.querySelector('.navigation');
+            clickx.addEventListener('click', ()=>{
+                menu.classList.toggle('Diam');
+                
+            });
+
+
 
         </script>
     </body>
