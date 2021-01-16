@@ -694,7 +694,7 @@ section img{
         }
         section h2 span {
             font-size: 43px;
-           
+            font-family: Atlane;
             line-height: 0px; 
             left: -9px;
         }
@@ -885,7 +885,7 @@ nav ul{
     }
     section h2 span {
         font-size: 43px;
-       
+        font-family: Atlane;
         line-height: 0px; 
         left: -9px;
     }
