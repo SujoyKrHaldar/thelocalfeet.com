@@ -4,6 +4,10 @@
     src: url(../Fonts/CaviarDreams.ttf);
 }
 @font-face{
+    font-family: Atlane;
+    src: url(../Fonts/Atlane\ OTF.otf);
+}
+@font-face{
     font-family: BlackSingature;
     src: url(../Fonts/BlackSingature.ttf);
 }
@@ -342,7 +346,7 @@ section img{
 
 @media (min-width:500px){
     .container{
-        max-width:400px;
+        max-width:550px;
     }
 }
 @media (min-width:576px){
@@ -559,7 +563,14 @@ section img{
     
     font-size: 16px;
 }
-
+/***************************************Footer******************/
+.nav ul li a {
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+    font-size: 13px;
+    padding: 14px;
+    transition: .5s;
+}
 
 
 
@@ -581,7 +592,7 @@ section img{
 
 
 }
-@media (max-width:560px){
+@media (max-width:768px){
 
     /*******************************************************Navbar******************************/
     header{
@@ -594,25 +605,25 @@ section img{
     .logo a {
         color: white;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 19px;
         left: 0;
     }
     .navbar{
-        padding-right: 1px;
+        height: 164px;
+        padding-left: 67px;
     }
-    
-    
-    .navbar.sticky{
+    .navbar.sticky {
         background-color: rgb(31, 31, 31);
         transition: 0.5s ease-in;
         color: white;
         display: flex;
-        height: 70px;
-        padding-top: 9px;
+        height: 97px;
+        padding-top: 23px;
+        padding-left: 29px;
     }
     /*************************************************Ham nav menu***************************/
     .menu {
-        width: 25%;
+        width: 14%;
         height: 100%;
         overflow: hidden; 
         
@@ -655,6 +666,86 @@ section img{
         transform: translateY(0%);
         transition: 0.5s cubic-bezier(1, 0.01, 0, 1.01);;
         border-radius: 0px;
+        height: 768px;
+    }
+}
+@media (max-width:600px){
+
+    /*******************************************************Navbar******************************/
+    header{
+        position: fixed;
+        z-index: 12;
+    }
+    nav ul{
+        display: none;
+    }
+    .logo a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        left: 0;
+    }
+    .navbar {
+        padding-right: 1px;
+        height: 80px;
+        padding-left: 35px;
+    }
+    
+    
+    .navbar.sticky{
+        background-color: rgb(31, 31, 31);
+        transition: 0.5s ease-in;
+        color: white;
+        display: flex;
+        height: 70px;
+        padding-top: 9px;
+    }
+    /*************************************************Ham nav menu***************************/
+    .menu {
+        width: 14%;
+        height: 100%;
+        overflow: hidden; 
+        
+        padding-bottom: 13px;
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu img {
+        width: 70%;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        padding: 30px;
+        width: 100%;
+        border-bottom-left-radius: 33px;
+        border-bottom-right-radius: 33px;
+        height: 537px;
+        background: #1f1f1fde;
+        transform: translateY(-100%);
+        transition: 0.5s cubic-bezier(1, 0.01, 0, 1.01);;
+    }
+    .navigation a {
+        text-decoration: none;
+        padding: 15px;
+        font-size: 26px;
+        color: white;
+        font-weight: 700;
+        text-align: center;
+    }
+    .navigation.Diam{
+        transform: translateY(0%);
+        transition: 0.5s cubic-bezier(1, 0.01, 0, 1.01);;
+        border-radius: 0px;
+        height: 528px;
     }
     /****************************************************landing page**********************************/
     
@@ -769,7 +860,22 @@ section img{
             padding: 16px;
         }
     }
-    
+@media (max-width:600px){
+/*******************************Navigation bar**********************/
+.navbar {
+    max-width: 535px;
+}
+
+
+    }  
+@media (max-width:415px){
+
+/****************************************Navigation mob******************/
+    .menu {
+        width: 22%;
+    }
+
+}
 
 
 @media (max-width:400px){
