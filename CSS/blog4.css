@@ -581,7 +581,195 @@ section img{
 
 
 }
+@media (max-width:560px){
 
+    /*******************************************************Navbar******************************/
+    header{
+        position: fixed;
+        z-index: 12;
+    }
+    nav ul{
+        display: none;
+    }
+    .logo a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        left: 0;
+    }
+    .navbar{
+        padding-right: 1px;
+    }
+    
+    
+    .navbar.sticky{
+        background-color: rgb(31, 31, 31);
+        transition: 0.5s ease-in;
+        color: white;
+        display: flex;
+        height: 70px;
+        padding-top: 9px;
+    }
+    /*************************************************Ham nav menu***************************/
+    .menu {
+        width: 25%;
+        height: 100%;
+        overflow: hidden; 
+        
+        padding-bottom: 13px;
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu img {
+        width: 70%;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        padding: 30px;
+        width: 100%;
+        border-bottom-left-radius: 33px;
+        border-bottom-right-radius: 33px;
+        height: 537px;
+        background: #1f1f1fde;
+        transform: translateY(-100%);
+        transition: 0.5s cubic-bezier(1, 0.01, 0, 1.01);;
+    }
+    .navigation a {
+        text-decoration: none;
+        padding: 15px;
+        font-size: 26px;
+        color: white;
+        font-weight: 700;
+        text-align: center;
+    }
+    .navigation.Diam{
+        transform: translateY(0%);
+        transition: 0.5s cubic-bezier(1, 0.01, 0, 1.01);;
+        border-radius: 0px;
+    }
+    /****************************************************landing page**********************************/
+    
+        .intro {
+          height: 594px;
+        }
+        .intro h2 {
+            top: -142px;
+            font-size: 48px;
+            line-height: 52px;
+            padding: 38px;
+            margin: 0;
+        }
+        section{
+            border-bottom-left-radius: 26px;
+        border-bottom-right-radius: 26px;
+        }
+        section#home:after {
+            top: 44%;
+            position: absolute;
+            content: '';
+            width: 70px;
+            right: 0;
+            height: 133px;
+            background: #ffffff6b;
+            z-index: 2;
+        }
+        section#home:before {
+            top: 44%;
+            position: absolute;
+            content: '';
+            width: 18px;
+            left: 0;
+            height: 133px;
+            background: #ffffff6b;
+            z-index: 2;
+        }
+        section h2 span {
+            font-size: 43px;
+           
+            line-height: 0px; 
+            left: -9px;
+        }
+        section img {
+            animation: 1s fadein cubic-bezier(0, 0.02, 0.57, 0.97);
+        }
+        /*******************************************Blog page******************************************/
+    
+    
+        .container {
+           padding: 32px;
+        }
+        .white.container:before {
+            content: '';
+            position: absolute;
+            width: 17%;
+            height: 2px;
+            background: #ff9930;
+            left: 42%;
+           
+        }
+        .container h1 {
+            
+            font-size: 34.9px;
+            
+        }
+        .container h1:before {
+           
+            width: 52.5%;
+            height: 10px;
+            left: 0px;
+            bottom: 20px;
+        }
+        .container h3 {
+            padding-bottom: 18px;
+            font-size: 20px;
+            line-height: 31px;
+        }
+        .container p {
+            padding: 05px 0;
+            font-size: 17px;
+            line-height: 24px;
+        }
+        .overlay {
+            margin: 16px 0px;
+        }
+    
+    
+    
+    
+        /*********************************************Footer*********************************/
+        .foot{
+            padding: 23px;
+            border-top-left-radius: 23px;
+            border-top-right-radius: 23px;
+            
+        }
+        .nav  {
+            display: none;
+    
+        }
+        .about4{
+            padding-top: 13px;
+        }
+        .about4 .brand a {
+            color: rgb(194, 194, 194);
+           
+            font-size: 14px;
+        }
+        .copyright p {
+            color: rgb(124 124 124);
+            padding: 16px;
+        }
+    }
+    
 
 
 @media (max-width:400px){
