@@ -221,7 +221,7 @@ a{
     position: absolute;
     background-size: cover;
     background-position: center;
-    animation:fadeeffect 5s ease-out ;
+    animation:fadeeffect 4.5s ease-out ;
 }
 @keyframes fadeeffect{
     0%{
@@ -260,7 +260,7 @@ a{
     width: 100%;
     height: 135%;
     margin-top: -134px;
-    animation:fadeout 3s ease-out ;
+    animation:fadeout 3.5s ease-out ;
 }
 .frontback{
     background: url(../image/25.png)no-repeat 50% 50%;
@@ -270,7 +270,7 @@ a{
     height: 149%;
     top: 0;
     margin-top: -268px;
-    animation:fadeout 3.4s ease-out ;
+    animation:fadeout 3s ease-out ;
 }
 @keyframes fadeout{
     0%{
@@ -896,45 +896,7 @@ hr.hr-end{
     background-color: rgb(29, 29, 29);
     transition: 0.1s ease-in;
 }
-.icon{
-    margin: auto;
-    position: relative;
-    width: 60%;
-    background: #232323;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.fa {
-    padding: 20px;
-    font-size: 70px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    
-    
-}
-.fa-facebook {
-    
-    color: rgb(255, 255, 255);
-    transition: 0.5s ease-in;
-}
-.fa-facebook:hover{
-    color: #686868;
-    transition: 0.5s ease-out;
-}
-.fa-instagram {
-   
-    color: white;
-    transition: 0.5s ease-in;
-}
-.fa-instagram:hover{
-    color: #535353;
-    transition: 0.5s ease-out;
-}
+
 .copyright p{
     color:rgb(87, 87, 87);
     padding: 1rem;
@@ -1053,6 +1015,14 @@ hr.hr-end{
         transform: translateY(-100%);
         transition: 0.5s cubic-bezier(1, 0.01, 0, 1.01);
       }
+      .navigation:after {
+        position: absolute;
+        content: '';
+        width: 4%;
+        height: 1px;
+        background: #ff8100;
+        bottom: 9px;
+    }
       .navigation a {
         text-decoration: none;
         padding: 15px;
@@ -1393,6 +1363,9 @@ hr.hr-end{
     html{
         font-size: 70%;
     }
+    .navigation a {
+        font-size: 20px;
+    }
     .parallex {
         height: 498px;
     }
@@ -1427,4 +1400,9 @@ hr.hr-end{
         padding-top: 20px;
     }
 
+}
+@media(max-width:281px){
+    .navigation a {
+        font-size: 19px;
+    }
 }
