@@ -874,7 +874,6 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin: auto;
-/* margin-top: 14px; */
 position: relative;
 padding: 40px;
 height: 82px;
@@ -1078,8 +1077,6 @@ padding: 1rem;
     /**************************nav********************/
     
 }
-
-/*@media (max-width:915px){}*/
 
 @media (max-width:864px){
 
