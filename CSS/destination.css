@@ -1,16 +1,28 @@
 /****************************************************Universal*************************************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
 @font-face{
     font-family: Caviar Dreams;
     src: url(../Fonts/CaviarDreams.ttf);
 }
 @font-face{
+    font-family:Smooth Fantasy;
+    src: url(../Fonts/Smooth\ Fantasy.ttf);
+}
+@font-face{
     font-family: BlackSingature;
     src: url(../Fonts/BlackSingature.ttf);
+}
+
+@font-face{
+    font-family: Aliens And Cows;
+    src: url(../Fonts/aliens\ and\ cows_trial.ttf);
 }
 @font-face{
     font-family: Amarillo;;
     src: url(../Fonts/Amarillo.ttf);
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -124,6 +136,7 @@ div#loading {
     margin: auto;
     height: 100%;
     left: 0%;
+    top: 0;
     z-index: 20;
     display: flex;
     flex-direction: column;
@@ -284,8 +297,9 @@ header{
 /***************************************************Landing page*****************************/
 .background-img {
     width: 100%;
-    height: 1000px;
+    height: 900px;
     object-fit: cover;
+    
     position: fixed;
     transform: translateY(-6%);
     animation: 6s back-img ease-out;
@@ -293,7 +307,7 @@ header{
 @keyframes back-img{
     0%{
         opacity: 0; 
-        transform: scale(1.2);
+        transform: translateY(-10%);
      }
     
     70%{
@@ -301,12 +315,13 @@ header{
       
     }
     100%{
-        transform: scale(1);
+        transform: translateY(-6%);
     }
 }
 .landing{
     width: 100%;
     height: 762px;
+    z-index: 2;
     position: relative;
     background: #2020206e;
 }
@@ -333,9 +348,10 @@ header{
 }
 .landing-map img {
     mix-blend-mode: soft-light;
-    animation: 7s fade ease-out;
+    opacity: 0.6;
+    animation: 7s fadeout ease-out;
 }
-@keyframes fade{
+@keyframes fadeout{
     0%{
         opacity: 0; 
      }
@@ -345,7 +361,7 @@ header{
       
     }
     100%{
-        opacity: 1;
+        opacity: 0.6;
     }
 }
 .introduction {
@@ -455,11 +471,11 @@ header{
     }
 }
 .introduction h2 {
-    font-size: 2.5rem;
-    color: #000000;
+    font-size: 1.5rem;
+    color: #bdbdbd;
     text-transform: initial;
     line-height: 4rem;
-    font-family: monospace;
+    font-family:Smooth Fantasy;
     letter-spacing: 1rem;
     animation: 7s up ease-out;
 }
@@ -483,7 +499,7 @@ header{
     position: relative;
     padding: 14px 30px;
     margin-top: 30px;
-    font-family: monospace;
+    font-family:monospace;
     border: 2px solid rgba(255, 255, 255, 0);
     color: white;
     letter-spacing: 0.2rem;
@@ -543,20 +559,19 @@ header{
 .explore{
     position: relative;
     width: 100%;
-    height: 100%;
     background: rgb(32 32 32);
-    padding-bottom: 225px;
-    padding-top: 86px;
+    padding-bottom: 130px;
+    padding-top: 110px;
 }
 .explore::after {
     position: absolute;
     content: '';
     width: 0.5px;
-    z-index: 1;
+    z-index: 4;
     left: 50%;
     transform: translateX(-50%);
     height: 50px;
-    bottom: 84px;
+    bottom: -23px;
     background: #bebebe;
 }
 .dest {
@@ -590,9 +605,9 @@ header{
     justify-content: flex-end;
 }
 .text h1 {
-    font-size: 4rem;
-    font-family: fantasy;
-    letter-spacing: 0.5rem;
+    font-size: 7rem;
+    font-family: Aliens And Cows;
+    letter-spacing: -0.5rem;
 }
 .text h2{
     font-size: 4rem;
@@ -693,7 +708,7 @@ a.button {
     display: inline;
     text-decoration: none;
     background: white;
-    font-family: monospace;
+    font-family:monospace;
     padding: .5rem 1rem;
     transform: translateY(70px);
     text-align: center;
@@ -778,10 +793,52 @@ a.button:hover{
 }
 .lower-text h1 {
     font-size: 2.3rem;
-    font-family: monospace;
+    font-family:  monospace;
     transition: 0.5s ease-in;
 }
+/***********************************msg-box*****************************/
+.msg-text {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background: #222222;
+}
+.msg-box {
+    height: 700px;
+    background: #222222;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.msg-box::after {
+    position: absolute;
+    content: '';
+    width: 0.5px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    bottom: 84px;
+    background: #bebebe;
+}
+.msg-box h2 {
+    color: #cacaca;
+    font-size: 3rem;
+    z-index: 1;
+}
+.msg-img {
+    position: absolute;
+}
+
+
 /******************************************Footer*******************/
+.footer{
+    width: 100%;
+    height: auto;
+    background: #222222;
+    z-index: 3;
+}
 .about4 {
     position: relative;
     width: 95%;
@@ -850,7 +907,11 @@ padding: 1rem;
 
 
 /****************************************Media*************************/
-
+@media (max-width:1378px){
+    .left-box {
+        width: 57%;
+    }
+}
 
 @media (max-width:1220px){
     html{
@@ -859,6 +920,9 @@ padding: 1rem;
 
     .dest {
         height: 748px;
+    }
+    .text h1 {
+        font-size: 8rem;
     }
 
     .about4 .logo a {
@@ -1015,7 +1079,7 @@ padding: 1rem;
     
 }
 
-@media (max-width:915px){}
+/*@media (max-width:915px){}*/
 
 @media (max-width:864px){
 
@@ -1100,7 +1164,7 @@ padding: 1rem;
     }
     .upper, .lower {
         width: 100%;
-        padding: 18px;
+        padding-top: 18px;
         display: flex;
         justify-content: flex-start;
     }
@@ -1156,9 +1220,21 @@ padding: 1rem;
 
 @media (max-width:600px){
 
-    
+    .map img {
+        width: 59%;
+    }
     .about4 .logo a {
         font-size: 1.7rem;
+    }
+    .msg-box {
+        height: 504px;
+    }
+    .msg-box h2 {
+        color: white;
+        font-size: 2.5rem;
+    }
+    .msg-img img {
+        width: 100%;
     }
     .copyright p{
         padding: 2rem;
@@ -1166,14 +1242,15 @@ padding: 1rem;
 }
 
 @media (max-width:480px){
-    .text h1 {
-        font-size: 4rem;
-    }
+    
     .map img {
-        width: 60%;
+        width: 74%;
     }
     .mob-logo h3 {
         font-size: 20px;
+    }
+    .text h1 {
+        font-size: 7rem;
     }
 }
 
@@ -1185,7 +1262,11 @@ padding: 1rem;
         font-size: 4.2rem;
     }
     .text h1 {
-        font-size: 3.5rem;
+        font-size: 7rem;
+    }
+    .msg-box h2 {
+        color: white;
+        font-size: 2rem;
     }
 }
 
@@ -1196,11 +1277,24 @@ padding: 1rem;
 }
 
 @media (max-width:361px){
+    .introduction {
+        height: 682px;
+    }
     .greet h1 {
         font-size: 2rem;
     }
     .greet h3 {
         font-size: 4.7rem;
+    }
+    .explore {
+        padding-bottom: 80px;
+        padding-top: 34px;
+    }
+    .landing:after {
+        height: 55px;
+    }
+    .msg-box::after {
+        bottom: 46px;
     }
 }
 

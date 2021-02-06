@@ -65,8 +65,7 @@
             </div>
           </header>           
 <!------------------------------------------------------landing page-->  
-
-<img id="home" class=" rellax background-img" data-rellax-speed='3' src="image/EXPLORE.jpeg">
+<img id="home" class="  background-img"  src="image/EXPLORE.jpeg">
 
 <div  class="landing">
     <div class="landing-map">
@@ -78,6 +77,8 @@
         <a href="#location" class="btn">Explore</a>
         
     </div>
+    
+
     
 </div>
 
@@ -111,7 +112,7 @@
                     </div>
                     <h1 data-aos="fade-up"
                     data-aos-duration="3000" >Explore <span>India</span></h1>
-                    <a href="India.HTML" class="button">Lets Go</a>
+                    <a  href="India.HTML" class="button">Lets Go</a>
                 </div>
             </div>
             <div class="lower">
@@ -123,38 +124,49 @@
                     </div>
                     <h1 data-aos="fade-up"
                     data-aos-duration="3000" >Explore <span>Vietnam</span> </h1>
-                    <a href="Vietnam.html" class="button">Lets Go</a>
+                    <a  href="Vietnam.html" class="button">Lets Go</a>
                 </div>
                 
             </div>
         </div>
     </div>
 </div>
-
-
+<!-------------------------------------------------------text shortcut-->            
+<div class="msg-text">
+    <div class="cylinder msg-box">
+        <h2 data-aos="fade-up" >Lets make your best trip Ever</h2>
+        <div class="msg-img">
+            
+            <img src="image/wmap3.png">
+        </div>
+        
+    </div>
+    
+</div>    
 <!------------------------Footer-->
-<div class="cylinder about4">
-    <div class="logo">
-        <a href="#home">thelocalfeet</a>
-    </div>
-    <div class="navbar">
-        <ul>
-            <li><a href="index.html" >  Home   </a></li>
-            <li><a href="Photography.html" >  Photography     </a></li>
-            <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
-            <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
-            <li><a href="AboutUs.html#contact" >  Contact Us   </a></li>
-        </ul>  
-    </div>
-    <div class="copyright">
-        <p>&copy;2020 thelocalfeet. All rights reserved.</p>
+<div class="footer">
+    <div class="cylinder about4">
+        <div class="logo">
+            <a href="#home">thelocalfeet</a>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html" >  Home   </a></li>
+                <li><a href="Photography.html" >  Photography     </a></li>
+                <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
+                <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
+                <li><a href="AboutUs.html#contact" >  Contact Us   </a></li>
+            </ul>  
+        </div>
+        <div class="copyright">
+            <p>&copy;2020 thelocalfeet. All rights reserved.</p>
+        </div>
     </div>
 </div>
 
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="rellax.min.js"></script>
-        <script type="text/javascript">
-            var rellax = new Rellax('.rellax');
+<script type="text/javascript">
             AOS.init({
                 disable: false,
                 once: true, 
@@ -208,13 +220,8 @@
             })   
             
             
-/*****************************************scroll-down******************************/
 
-            window.addEventListener("scroll", ()=>{
-                console.log(scrollY);
-                var scroll = document.querySelector(".scroll-downs");
-                scroll.classList.toggle("sticky", window.scrollY > 0);
-            })
+            
 
 
 /******************************************opacity landing page only***************************/
@@ -222,7 +229,7 @@
             var land = document.getElementById("home");
 
             window.addEventListener('scroll', ()=>{
-                land.style.opacity = 1 - +window.pageYOffset/650+'';
+                land.style.opacity = 1 - +window.pageYOffset/550+'';
             });
 
 
