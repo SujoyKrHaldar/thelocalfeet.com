@@ -20,6 +20,10 @@
     font-family: Amarillo;;
     src: url(../Fonts/Amarillo.ttf);
 }
+@font-face{
+    font-family: Aliens And Cows;
+    src: url(../Fonts/aliens\ and\ cows_trial.ttf);
+}
 *{
     margin: 0;
     padding: 0;
