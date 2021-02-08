@@ -759,6 +759,12 @@ padding: 1rem;
         padding-bottom:0px; 
         padding-top:0px; 
     }
+    .container img {
+        margin: 20px 0;
+    }
+    .sub {
+        padding-bottom: 20px;
+    }
     .container h1 {
         padding: 25px 0;
         font-size: 3rem;
