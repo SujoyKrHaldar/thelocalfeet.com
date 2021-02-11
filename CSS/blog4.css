@@ -679,6 +679,7 @@ padding: 1rem;
     }
     .overlay{
         text-align: left;
+        margin: 20px 0;
     }
     .overlay p {
         font-size: 1.5rem;
@@ -705,6 +706,10 @@ padding: 1rem;
     .mob-logo h3 {
         font-size: 20px;
     } 
+    .overlay{
+        text-align: left;
+        margin: 10px 0;
+    }
 }
 
 @media (max-width:412px){
