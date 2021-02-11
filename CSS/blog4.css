@@ -390,23 +390,6 @@ section img{
 
 }
 
-.overlay{
-    width: 100%;
-    overflow: hidden;
-    margin: 40px 0;
-}
-.overlay img{
-   
-    width: 100%;
-    object-fit: cover;
-    -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;   
-    
-    
-}
-
 .container h1 {
     padding: 47px 0;
     font-size: 4rem;
@@ -434,9 +417,31 @@ section img{
 .container p {
     padding: 05px 0;
     font-size: 1.4rem;
-    line-height: 2.5rem;
+    line-height: 2.2rem;
     color: #353535;
 }
+.overlay{
+    width: 100%;
+    overflow: hidden;
+    margin: 40px 0;
+    text-align: center;
+}
+.overlay img{
+   
+    width: 100%;
+    object-fit: cover;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;       
+}
+.overlay p{
+    font-size: 1.3rem;
+    font-weight: 800;
+    padding: 0;
+    color: black;
+}
+
 /*******************************************************************/
 
 /*****************************************Footer*************************************************/
@@ -671,6 +676,12 @@ padding: 1rem;
     .white {
         padding-bottom:0px; 
         padding-top:0px; 
+    }
+    .overlay{
+        text-align: left;
+    }
+    .overlay p {
+        font-size: 1.5rem;
     }
     .container h1 {
         padding: 25px 0;
