@@ -7,136 +7,139 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="CSS/Vietnam.css" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     </head>
     <body onload="myFunction()">
+        <!-------------------------------------------------loading--> 
         <div id="loading">
-            <h1>Come with us</h1>
-        </div>
-        <div class="greet">
-            <h1>Lets Explore</h1> 
-            <h3>Vietnam</h3>
-        </div>
-
-
-        <div class="errormsg desktop-off mobile-on">
-            <h1>!</h1>
-            <p>
-                Please open in your PC device.<br>
-                This page is not Responsive.
-            </p>
-            <p class="col">
-                We are working on it.
-            </p>
-        </div>
-
-        
-        <header>
-            <div class="navbar">
-                <div class="logo">
-                    <a href="index.html"><h2>thelocalfeet</h2></a>
-                </div>
-                <nav>
-                    <a href="#" class="hide-desktop">
-                        <img src="image/menu.png" class="menu" id="menu">
-                    </a>
-                    <ul class="show-desktop hide-mobile"  >
-                        <li><a href="Explore.html#location" >  Explore     </a></li>
-                        <li><a href="Photography.html" >  Photography     </a></li>
-                        <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
-                        <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
-                        <li><a href="AboutUs.html" >  About us   </a></li>
-                    </ul>  
-                </nav>
+            <div  class="img-container">
+                <img src="image/globe.gif">
             </div>
-        </header>
-        <div class="navig hide-mobile" id="navbar">
             
-            <ul  id="navbar" >
-                <li id="exit" class="exit-btn ">
-                    <img src="image/cross.png" >
-                </li>
-                <li><a href="Explore.html#location" >  Explore     </a></li>
-                <li><a href="Photography.html" >  Photography     </a></li>
-                <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
-                <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
-                <li><a href="AboutUs.html" >  About us   </a></li>
-            </ul>
+        </div>    
+        <div class="cylinder">
+            <div class="greet">
+                <h1>thelocalfeet</h1> 
+                <h3> - Vietnam Diaries - </h3>
+            </div>
         </div>
-        
-        
+ <!---------------------------------------------------navigation bar mob-->        
+ <headnav>
+    <div class="mob-logo">
+        <h3>thelocalfeet</h3>
+    </div>
+    
+        <div id="menu" class="desktop-off">
+            <div id="pencet" >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+        </div>
+
+</headnav>
+<div class="navigation navmob" >
+    <a href="index.html" >  Home     </a>
+    <a href="Explore.html" >  Explore     </a>
+    <a href="Photography.html" >  Photography     </a>
+    <a href="Travel-Tips.html" >  Travel tips & planning   </a>
+    <a href="Travel-Inspiration.html" >  Travel inspiration   </a>
+    <a href="AboutUs.html" >  About us   </a></li>
+</div>  
+<!----------------------------------------------Navigation bar-->        
+
+<header>
+<div class="cylinder navbar-top">
+    <div class="logo-top">
+        <a href="index.html"><h2>thelocalfeet</h2></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="Explore.html#location" >  Explore     </a></li>
+            <li><a href="Photography.html" >  Photography     </a></li>
+            <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
+            <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
+            <li><a href="AboutUs.html" >  About us   </a></li>
+        </ul>
+    </nav>
+</div>
+</header>       
+
+<!--------------------------------------------Landing page-->    
         <section id="home">
-            <div class="text">
-                <h2 class="rellax" data-rellax-speed='2'>Exploring <br> <span>Vietnam</span></h2>
+            <div class="cylinder text">
+                <h2>Exploring </h2>
+                <h3>Vietnam</h3>
             </div>
             <img  src="image/vietnam.jpeg" >
         </section>
 
-
-        <div class="sec">
-            <div class="box">
-                <div class="content">
-                    <h1>Local food in VIETNAM</h1>
-                    <p>Top places to find mouth-watering dishes in Vietnam. Must try local dishes CA PHE TRUNG,  BANH RAN, BANH MI, PHO etc. Also visit KEM HO TAY is a famous ice cream shop in Hanoi</p>
-                    <a href="Local-food-in-VIETNAM.html" class="btn">Read more</a>
-                </div>
-                <div class="imgb">
-                    <img src="img/2.jpg">
-                </div>
+        <!--------------------------------------Blog-->
+<div class="body">
+    <div class="cylinder sec">
+        <div class="box">
+            <div class="content">
+                <h1>Local food in VIETNAM</h1>
+                <p>Top places to find mouth-watering dishes in Vietnam. Must try local dishes CA PHE TRUNG,  BANH RAN, BANH MI, PHO etc. Also visit KEM HO TAY is a famous ice cream shop in Hanoi</p>
+                <a href="Local-food-in-VIETNAM.html" class="btn">Read more</a>
             </div>
-            <div class="box">
-                <div class="imgb">
-                    <img src="img/6.jpg">
-                </div>
-                <div class="content">
-                    <h1>Things to do in HANOI</h1>
-                    <p>Top attractions in Hanoi. Visit Hoan kiem lake, Tran Quoc Pagoda, Hoa Lo Prison, Water Puppet Theatre, Old Quarter</p>
-                    <a href="Things-to-do-in-HANOI.html" class="btn">Read more</a>
-                </div>
-                
+            <div class="imgb">
+                <img src="img/2.jpg">
             </div>
         </div>
-        <div class="about4">
-            <div class="brand">
-                <a href="#home"><h2>thelocalfeet</h2></a>
+        <div class="box p2">
+            <div class="imgb">
+                <img src="img/6.jpg">
             </div>
-            <di class="nav">
-                <ul>
-                    <li><a href="Explore.html" >  Explore     </a></li>
-                    <li><a href="Photography.html" >  Photography     </a></li>
-                    <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
-                    <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
-                    <li><a href="AboutUs.html#contact" >  Contact us   </a></li>
-                </ul>  
-            </di>
- <!--       <div class="icon">
-                <a href="https://www.facebook.com/thelocalfeet" class="fa fa-facebook"></a>
-                <a href="https://www.instagram.com/thelocalfeet/?hl=en" class="fa fa-instagram"></a>
-            </div>-->
-            <div class="copyright">
-                <p>&copy;2021 thelocalfeet. All rights reserved.</p>
+            <div class="content">
+                <h1>Things to do in HANOI</h1>
+                <p>Top attractions in Hanoi. Visit Hoan kiem lake, Tran Quoc Pagoda, Hoa Lo Prison, Water Puppet Theatre, Old Quarter</p>
+                <a href="Things-to-do-in-HANOI.html" class="btn">Read more</a>
             </div>
+            
         </div>
+    </div>
+</div>
+        <!-------------------------------Footer-------->
+<div class="footer">
+    <div class="cylinder about4">
+        <div class="logo">
+            <a href="#home">thelocalfeet</a>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html" >  Home  </a></li>
+                <li><a href="Explore.html" >  Explore     </a></li>
+                <li><a href="Photography.html" >  Photography     </a></li>
+                <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
+                <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
+                <li><a href="AboutUs.html#contact" >  Contact us   </a></li>
+            </ul>  
+        </div>
+        <div class="copyright">
+            <p>&copy;2021 thelocalfeet. All rights reserved.</p>
+        </div>
+    </div>
+</div>
         
-        <script src="rellax.min.js"></script>
+        
         <script type="text/javascript">
-            var rellax = new Rellax('.rellax');
-            window.addEventListener("scroll",function(){
-                var header = document.querySelector("header");
-                header.classList.toggle("sticky", window.scrollY > 75)
-            })
-            var menu = document.getElementById('menu');
-            var exit = document.getElementById('exit');
-            var nav = document.getElementById('navbar');
-            menu.addEventListener('click', function(e){
-                nav.classList.toggle('hide-mobile');
-                e.preventDefault();
-            })
-            exit.addEventListener('click', function(e){
-                nav.classList.toggle('hide-mobile');
-                e.preventDefault();
-            })
+            
+ //-----------------------mobile menu------------------------------------------------------------//
+
+const clickx= document.getElementById('pencet');
+
+clickx.addEventListener('click', ()=>{
+  clickx.classList.toggle('simple');
+});
+
+const clicky= document.getElementById('menu');
+
+const menu = document.querySelector('.navigation');
+clicky.addEventListener('click', ()=>{
+    menu.classList.toggle('Diam');
+    
+});
 
             /**************************Loading*******************************/
             var preloader = document.getElementById('loading');

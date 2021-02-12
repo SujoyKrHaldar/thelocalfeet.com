@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>India Diaries | thelocalfeet</title>
+        <title>THELOCALFEET | INDIA DIARIES</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="CSS/India.CSS" type="text/css">
@@ -11,66 +11,76 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     </head>
     <body onload="myFunction()">
+
+        <!-------------------------------------------------loading--> 
         <div id="loading">
-            <h1>Come with us</h1>
+            <div  class="img-container">
+                <img src="image/globe.gif">
+            </div>
             
-        </div>
-        <div class="greet">
-            <h1>Lets Explore</h1> 
-            <h3>India</h3>
+        </div>    
+        <div class="cylinder">
+            <div class="greet">
+                <h1>thelocalfeet</h1> 
+                <h3> - India Diaries - </h3>
+            </div>
         </div>
 
-        <div class="errormsg desktop-off mobile-on">
-            <h1>!</h1>
-            <p>
-                Please open in your PC device.<br>
-                This page is not Responsive.
-            </p>
-            <p class="col">
-                We are working on it.
-            </p>
-        </div>
-        
-        <header>
-            <div class="navbar">
-                <div class="logo">
-                    <a href="index.html"><h2>thelocalfeet</h2></a>
-                </div>
-                <nav>
-                    <a href="#" class="hide-desktop">
-                        <img src="image/menu.png" class="menu" id="menu">
-                    </a>
-                    <ul class="show-desktop hide-mobile">
-                        <li><a href="Explore.html#location" >  Explore     </a></li>
-                        <li><a href="Photography.html" >  Photography     </a></li>
-                        <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
-                        <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
-                        <li><a href="AboutUs.html" >  About us   </a></li>
-                    </ul>  
-                </nav>
+        <!---------------------------------------------------navigation bar mob-->        
+        <headnav>
+            <div class="mob-logo">
+                <h3>thelocalfeet</h3>
             </div>
-        </header>
-        <div class="navig hide-mobile" id="navbar">
             
-            <ul  id="navbar" >
-                <li id="exit" class="exit-btn ">
-                    <img src="image/cross.png" >
-                </li>
-                <li><a href="Explore.html#location" >  Explore     </a></li>
-                <li><a href="Photography.html" >  Photography     </a></li>
-                <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
-                <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
-                <li><a href="AboutUs.html" >  About us   </a></li>
-            </ul>
+                <div id="menu" class="desktop-off">
+                    <div id="pencet" >
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                </div>
+
+        </headnav>
+        <div class="navigation navmob" >
+            <a href="index.html" >  Home     </a>
+            <a href="Explore.html" >  Explore     </a>
+            <a href="Photography.html" >  Photography     </a>
+            <a href="Travel-Tips.html" >  Travel tips & planning   </a>
+            <a href="Travel-Inspiration.html" >  Travel inspiration   </a>
+            <a href="AboutUs.html" >  About us   </a></li>
+       </div>  
+      <!----------------------------------------------Navigation bar-->        
+
+      <header>
+        <div class="cylinder navbar-top">
+            <div class="logo-top">
+                <a href="index.html"><h2>thelocalfeet</h2></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Explore.html#location" >  Explore     </a></li>
+                    <li><a href="Photography.html" >  Photography     </a></li>
+                    <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
+                    <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
+                    <li><a href="AboutUs.html" >  About us   </a></li>
+                </ul>
+            </nav>
         </div>
+      </header>       
+
+<!--------------------------------------------Landing page-->        
+
         <section id="home">
-            <div class="text">
-                <h2 class="rellax" data-rellax-speed='2'>Exploring</h2>
-                <h3 class="rellax" data-rellax-speed='2'> <span>India</span></h3>
+            <div class="cylinder text">
+                <h2>Exploring</h2>
+                <h3>India</h3>
             </div>
             <img  src="image/india2.jpg" >
         </section>
-        <div class="sec">
+
+<!-------------------------------------------blogpage---------->
+    <div class="body">
+        <div class="cylinder sec">
             <div class="box">
                 <div class="content">
                     <h1>Best food trip in INDIA</h1>
@@ -81,7 +91,7 @@
                     <img src="img/5.jpg">
                 </div>
             </div>
-            <div class="box">
+            <div class="box p2">
                 <div class="imgb">
                     <img src="img/7.jpg">
                 </div>
@@ -93,50 +103,51 @@
                 
             </div>
         </div>
-        <div class="about4">
-            <div class="brand">
-                <a href="#home"><h2>thelocal<span>feet</span></h2></a>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li><a href="Explore.html" >  Explore     </a></li>
-                    <li><a href="Photography.html" >  Photography     </a></li>
-                    <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
-                    <li><a href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
-                    <li><a href="AboutUs.html#contact" >  Contact us   </a></li>
-                </ul>  
-            </div>
-        <!--<div class="icon">
-                <a href="https://www.facebook.com/thelocalfeet" class="fa fa-facebook"></a>
-                <a href="https://www.instagram.com/thelocalfeet/?hl=en" class="fa fa-instagram"></a>
-            </div>-->
-            <div class="copyright">
-                <p>&copy;2021 thelocalfeet. All rights reserved.</p>
+    </div>
+        
+
+<!-----------------------------------------------------footer----->
+         <div class="footer">
+            <div class="cylinder about4">
+                <div class="logo">
+                    <a href="#home">thelocalfeet</a>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="index.html" >  Home  </a></li>
+                        <li><a href="Explore.html" >  Explore     </a></li>
+                        <li><a href="Photography.html" >  Photography     </a></li>
+                        <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
+                        <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
+                        <li><a href="AboutUs.html#contact" >  Contact us   </a></li>
+                    </ul>  
+                </div>
+                <div class="copyright">
+                    <p>&copy;2021 thelocalfeet. All rights reserved.</p>
+                </div>
             </div>
         </div>
         
-        <script src="rellax.min.js"></script>
         <script type="text/javascript">
-            var rellax = new Rellax('.rellax');
-
             
-            /*window.addEventListener("scroll",function(){
-                var header = document.querySelector("header");
-                header.classList.toggle("sticky", window.scrollY > 500)
-            })*/
 
 
-            var menu = document.getElementById('menu');
-            var exit = document.getElementById('exit');
-            var nav = document.getElementById('navbar');
-            menu.addEventListener('click', function(e){
-                nav.classList.toggle('hide-mobile');
-                e.preventDefault();
-            })
-            exit.addEventListener('click', function(e){
-                nav.classList.toggle('hide-mobile');
-                e.preventDefault();
-            })
+
+//-----------------------mobile menu------------------------------------------------------------//
+
+const clickx= document.getElementById('pencet');
+
+clickx.addEventListener('click', ()=>{
+  clickx.classList.toggle('simple');
+});
+
+const clicky= document.getElementById('menu');
+
+const menu = document.querySelector('.navigation');
+clicky.addEventListener('click', ()=>{
+    menu.classList.toggle('Diam');
+    
+});
             /*****************************Loader********************************/
             var preloader = document.getElementById('loading');
             function myFunction(){
@@ -160,7 +171,7 @@
                 opacity: 0,
                 y: -60,
                 ease: Expo.easeInOut
-            })   
+            })  
         </script>
     </body>
 </html>
