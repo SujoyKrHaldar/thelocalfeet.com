@@ -164,6 +164,18 @@ clicky.addEventListener('click', ()=>{
                 y: -60,
                 ease: Expo.easeInOut
             })   
+
+
+            /************************************************Navigation bar mob***************************/
+
+
+const mobNav = document.querySelector("headnav");
+window.addEventListener("scroll",() =>{
+                console.log(scrollY)
+                mobNav.classList.toggle("sticky", window.scrollY > 799);
+            });
+
+
         </script>
     </body>
 </html>
