@@ -425,6 +425,11 @@ img{
     line-height: 2.5rem;
     color: #1a1a1a;
 }
+p.caption{
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 0;
+}
 .box {
     padding: 22px 0;
     
@@ -513,7 +518,7 @@ img.img2a4 {
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin: 0px auto 30px auto;
+    /*margin: 0px auto 30px auto;*/
 }
 .img4a {
     display: flex;
@@ -559,13 +564,15 @@ img.img5b {
     width: 100%;
     overflow: hidden;
 }
-img.img6a1 {
-    width: 50%;
-    object-fit: cover;
+.img6a1 {
     margin-right: 5px;
 }
-img.img6a2 {
-    width: 50%;
+.img6a1 img{
+    width: 100%;
+    object-fit: cover;
+}
+.img6a2 img {
+    width: 100%;
     object-fit: cover;
 }
 .img6b {
@@ -831,7 +838,7 @@ padding: 1rem;
     }
     .c1 {
 
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .img2 {
