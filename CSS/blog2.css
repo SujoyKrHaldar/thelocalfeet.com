@@ -399,7 +399,6 @@ section img{
    
     width: 100%;
     object-fit: cover;
-    margin: 40px 0;
     -webkit-user-drag: none;
     -khtml-user-drag: none;
     -moz-user-drag: none;
@@ -440,9 +439,7 @@ section img{
 }
 .sub {
     overflow: hidden;
-    padding-bottom: 40px;
-    padding-left: 25px;
-    
+    /*padding-bottom: 40px;*/
 }
 .sub p {
     font-size: 1.4rem;
@@ -525,6 +522,15 @@ img.imgbox13 {
 img.imgbox14 {
     width: 100%;
     object-fit: cover;
+}
+.caption{
+    margin: 40px 0;
+}
+.caption p{
+    font-size: 1.2rem;
+    padding: 0;
+    font-weight: 800;
+    text-align: left;
 }
 /***********************************************************************************/
 /*****************************************Footer*************************************************/
@@ -754,16 +760,17 @@ padding: 1rem;
 @media (max-width:600px){
     .container {
         padding: 30px;
+        padding-bottom: 70px;
     }
     .white {
         padding-bottom:0px; 
         padding-top:0px; 
     }
     .container img {
-        margin: 20px 0;
+        margin: 0;
     }
-    .sub {
-        padding-bottom: 20px;
+    .caption {
+        padding-bottom: 0px;
     }
     .container h1 {
         padding: 25px 0;
@@ -809,9 +816,6 @@ padding: 1rem;
     }
 }
 
-@media (max-width:376px){
-    
-}
 
 @media (max-width:361px){
 
