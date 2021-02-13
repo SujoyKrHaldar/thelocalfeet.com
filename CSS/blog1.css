@@ -402,8 +402,7 @@ section img{
    
     text-align: center;
     overflow: hidden;
-    
-    margin: 10px 0 57px;
+    margin: 10px 0 15px;
 }
 .overlay img {
     width: 100%;
@@ -424,6 +423,7 @@ section img{
 .left {
     display: flex;
     flex-direction: column;
+    margin-top: 34px;
 }
 
 img.img1 {
@@ -442,7 +442,6 @@ img.img2 {
     -o-user-drag: none;
 }
 .right {
-    margin-bottom: 82px;
     display: flex;
     margin-top: 78px;
     justify-content: center;
@@ -503,7 +502,11 @@ p.leftpart {
     font-size: 2rem;
     font-weight: 800;
 }
-
+p.caption{
+    padding: 0;
+    text-align: left;
+    font-size: 1.2rem;
+}
 /*******************************************************************************/
 /*****************************************Footer*************************************************/
 
