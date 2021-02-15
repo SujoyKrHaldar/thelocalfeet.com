@@ -5,24 +5,12 @@
     src: url(../Fonts/CaviarDreams.ttf);
 }
 @font-face{
-    font-family: BlackSingature;
-    src: url(../Fonts/BlackSingature.ttf);
-}
-@font-face{
-    font-family:Smooth Fantasy;
-    src: url(../Fonts/Smooth\ Fantasy.ttf);
-}
-@font-face{
     font-family: Freeds;
     src: url(../Fonts/Freeds-Regular.ttf);
 }
 @font-face{
     font-family: Amarillo;;
     src: url(../Fonts/Amarillo.ttf);
-}
-@font-face{
-    font-family: Aliens And Cows;
-    src: url(../Fonts/aliens\ and\ cows_trial.ttf);
 }
 *{
     margin: 0;
@@ -108,6 +96,39 @@ p::selection {
     }
   }
 
+  .triangle-top {
+    position: fixed;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 53px;
+    z-index: 3;
+    margin: 30px auto;
+    opacity: 0;
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    border-bottom: 40px solid black;
+    transition: 0.5s;
+}
+.triangle-top:hover{
+    border-bottom: 45px solid rgb(255, 127, 7);
+    transition: 0.5s;
+}
+.triangle-top:active{
+    transform: scale(0.90);
+    border-bottom: 30px solid rgb(255, 127, 7);
+}
+
+.triangle-top.arrow-visible{
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.triangle-top.arrow-disable{
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.5s;
+}
 
 /************************************LOADINGPAGE**************************************************/
 div#loading {
@@ -307,8 +328,8 @@ section{
     height: 768px;
     margin: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 .intro h2 {
     position: relative;
@@ -317,7 +338,6 @@ section{
     font-size: 3rem;
     padding: 3rem;
     letter-spacing: 0.5rem;
-    line-height: 7rem;
     color: #ffffff;
     animation: 4s up ease-out;
 }
@@ -335,20 +355,20 @@ section{
     }
 }
 section h2 span {
-    font-family: Aliens And Cows;
     position: relative;
-    font-size: 14rem;
+    font-family: Freeds;
+    font-size: 11rem;
     color: white;
-    left: -26px;
-    letter-spacing: -1.5rem;
+    letter-spacing: 1rem;
+    display: block;
     animation: 5s upd ease-out;
 }
 @keyframes upd{
     0%{
         opacity: 0;
-        transform: translateY(-700px);
+        transform: translateY(-200px);
     }
-    55%{
+    65%{
         opacity: 0;
     }
     100%{
@@ -424,6 +444,7 @@ section img{
     display: flex;
     flex-direction: column;
     margin-top: 34px;
+    width: 50%;
 }
 
 img.img1 {
@@ -434,7 +455,8 @@ img.img1 {
     object-fit: cover;
 }
 img.img2 {
-    width: 50%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     -webkit-user-drag: none;
     -khtml-user-drag: none;
@@ -502,10 +524,17 @@ p.leftpart {
     font-size: 2rem;
     font-weight: 800;
 }
+.flex{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
 p.caption{
+    font-size: 1.3rem;
+    font-weight: 800;
     padding: 0;
+    color: black;
     text-align: left;
-    font-size: 1.2rem;
 }
 /*******************************************************************************/
 /*****************************************Footer*************************************************/
@@ -731,6 +760,9 @@ padding: 1rem;
 }
 
 @media (max-width:600px){
+    .triangle-top{
+        right: 25px;
+    }
     .container {
         padding: 30px;
         padding-bottom: 70px;
@@ -746,6 +778,10 @@ padding: 1rem;
     }
     .grid {
         flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .left, .flex{
+        width: 100%;
     }
     img.img1 {
         transform: translateY(0px);
@@ -812,7 +848,7 @@ padding: 1rem;
         font-size: 2rem;
     }
     .greet h3 {
-        font-size: 4.7rem;
+        font-size: 3.8rem;
     }
 }
 

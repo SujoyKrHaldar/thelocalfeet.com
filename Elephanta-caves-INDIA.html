@@ -74,9 +74,10 @@
         <section id="home">
             <div class=" intro cylinder">
                 <h2> A hidden island in Mumbai <span>Elephanta caves</span></h2>
+                <img class="rellax" src="img/7.png" data-rellax-speed='-6' alt="Landing image" > 
             </div>
-            
-            <img class="rellax" src="img/7.png" data-rellax-speed='-6' alt="Landing image" >    
+            <a href="#home"><div class="triangle-top"></div></a>
+               
         </section>
 
 <!-------------------------------------------------------Blog page----->        
@@ -162,28 +163,33 @@
 
 //-----------------------mobile menu------------------------------------------------------------//
 
-const clickx= document.getElementById('pencet');
+            const clickx= document.getElementById('pencet');
 
-clickx.addEventListener('click', ()=>{
-  clickx.classList.toggle('simple');
-});
+            clickx.addEventListener('click', ()=>{            
+              clickx.classList.toggle('simple');
+            });
 
-const clicky= document.getElementById('menu');
+            const clicky= document.getElementById('menu');
 
-const menu = document.querySelector('.navigation');
-clicky.addEventListener('click', ()=>{
-    menu.classList.toggle('Diam');
+            const menu = document.querySelector('.navigation');
+            clicky.addEventListener('click', ()=>{
+                menu.classList.toggle('Diam');
     
-});
+            });
 
 
 /************************************************Navigation bar mob***************************/
 
 
-const mobNav = document.querySelector("headnav");
-window.addEventListener("scroll",() =>{
+            const mobNav = document.querySelector("headnav");
+            const arrowKey = document.querySelector(".triangle-top");
+
+            window.addEventListener("scroll",() =>{
                 console.log(scrollY)
                 mobNav.classList.toggle("sticky", window.scrollY > 799);
+                arrowKey.classList.toggle("arrow-visible", window.scrollY > 1200);
+                arrowKey.classList.toggle("arrow-disable", window.scrollY > 3491);
+
             });
 
 

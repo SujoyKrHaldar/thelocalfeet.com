@@ -4,24 +4,11 @@
     src: url(../Fonts/CaviarDreams.ttf);
 }
 @font-face{
-    font-family:Smooth Fantasy;
-    src: url(../Fonts/Smooth\ Fantasy.ttf);
+    font-family: Freeds;
+    src: url(../Fonts/Freeds-Regular.ttf);
 }
 @font-face{
-    font-family: BlackSingature;
-    src: url(../Fonts/BlackSingature.ttf);
-}
-@font-face{
-    font-family: Atlane;
-    src: url(../Fonts/Atlane\ OTF.otf);
-}
-
-@font-face{
-    font-family: Aliens And Cows;
-    src: url(../Fonts/aliens\ and\ cows_trial.ttf);
-}
-@font-face{
-    font-family: Amarillo;;
+    font-family: Amarillo;
     src: url(../Fonts/Amarillo.ttf);
 }
 
@@ -113,6 +100,40 @@ p::selection {
     }
   }
 
+
+  .triangle-top {
+    position: fixed;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 53px;
+    z-index: 3;
+    margin: 30px auto;
+    opacity: 0;
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    border-bottom: 40px solid black;
+    transition: 0.5s;
+}
+.triangle-top:hover{
+    border-bottom: 45px solid rgb(255, 127, 7);
+    transition: 0.5s;
+}
+.triangle-top:active{
+    transform: scale(0.90);
+    border-bottom: 30px solid rgb(255, 127, 7);
+}
+
+.triangle-top.arrow-visible{
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.triangle-top.arrow-disable{
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.5s;
+}
 
 /********************************Loading************************************************/
 div#loading {
@@ -314,17 +335,17 @@ section{
     height: 768px;
     margin: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 .intro h2 {
     position: relative;
-    color: rgb(255, 255, 255);
+    font-family: Freeds;
     z-index: 1;
-    font-size: 1.4rem;
-    line-height: 3.5rem;
-    font-family: Smooth Fantasy;
-    font-family: Atlane;
+    font-size: 2rem;
+    padding: 3rem;
+    letter-spacing: 0.5rem;
+    color: #ffffff;
     animation: 4s up ease-out;
 }
 @keyframes up{
@@ -341,11 +362,26 @@ section{
     }
 }
 section h2 span {
-    font-family: Aliens And Cows;
-    display: block;
-    font-size: 6rem;
-    letter-spacing: -0.5rem;
     position: relative;
+    font-family: Freeds;
+    font-size: 6rem;
+    color: white;
+    letter-spacing: 1rem;
+    display: block;
+    animation: 5s upd ease-out;
+}
+@keyframes upd{
+    0%{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    65%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 section img{
@@ -355,7 +391,7 @@ section img{
     object-fit: cover;
     width: 100%;
     height: 100%;
-    opacity: 0.8;
+    opacity: 0.6;
     pointer-events: none;
     animation: 4s fadein cubic-bezier(0, 0.02, 0, 1.2);
 }  
@@ -366,7 +402,7 @@ section img{
         height: 0;
     }
     100%{
-        opacity: 0.8;
+        opacity: 0.6;
         
         height: 100%;
     }
@@ -440,6 +476,7 @@ section img{
     font-weight: 800;
     padding: 0;
     color: black;
+    text-align: left;
 }
 
 /*******************************************************************/
@@ -669,6 +706,9 @@ padding: 1rem;
 }
 
 @media (max-width:600px){
+    .triangle-top{
+        right: 25px;
+    }
     .container {
         padding: 30px;
         padding-bottom: 70px;
@@ -751,13 +791,7 @@ padding: 1rem;
     .intro {
         height: 559px;
     }
-    .intro h2 {
-        font-size: 2rem;
-    }section h2 span {
-        left: 0px;
-        letter-spacing: 0rem;
-        font-size: 11rem;
-    }
+
     .navigation a {
         font-size: 20px;
     }
