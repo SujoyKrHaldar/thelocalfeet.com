@@ -228,10 +228,6 @@
                         <li><a  href="AboutUs.html#contact" >  Contact us   </a></li>
                     </ul>  
                 </div>
-        <!--    <div class="icon">
-                    <a href="https://www.facebook.com/thelocalfeet" class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/thelocalfeet/?hl=en" class="fa fa-instagram"></a>
-                </div>-->
                 <div class="copyright">
                     <p>&copy;2021 thelocalfeet. All rights reserved.</p>
                 </div>
@@ -302,6 +298,14 @@
             var land = document.getElementById("home");
             window.addEventListener('scroll', ()=>{
                 land.style.opacity = 1 - +window.pageYOffset/800+'';
+            });
+/************************************************Navigation bar mob***************************/
+
+
+            const mobNav = document.querySelector("headnav");
+            window.addEventListener("scroll",() =>{
+                console.log(scrollY)
+                mobNav.classList.toggle("sticky", window.scrollY > 799);
             });
 
 

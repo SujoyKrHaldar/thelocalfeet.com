@@ -1001,6 +1001,11 @@ hr.hr-end{
             transform: translateY(0px); 
         }
     }
+    headnav.sticky {
+        background-color: rgb(31 31 31 / 56%);
+        transition: 0.5s ease-in;
+        backdrop-filter: blur(2px);
+    }
     .navigation {
         display: flex;
         flex-direction: column;
@@ -1238,6 +1243,7 @@ hr.hr-end{
     }
     .achievement p {
         padding: 0;
+        line-height: 2.2rem;
         font-size: 1.5rem;
     }
     /****************************Footer*************/
