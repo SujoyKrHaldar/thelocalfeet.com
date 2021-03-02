@@ -3,94 +3,94 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>ABOUT US</title>
+        <title>THELOCALFEET | ABOUT US</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/contact.css" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://kit.fontawesome.com/b751cf2b73.js" crossorigin="anonymous"></script> 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     </head>
     <body  onload="myFunction()">
 
 <!--------------------------------------------------------Loading-->        
-<div class="greet">
-    <h1>thelocalfeet</h1> 
-    <h3>Who We Are</h3>
-  </div>
-
-        <div id="loading" class="loader">
-            <img src="image/circle.gif">
-        </div>
-
-      
-
-<div class="errormsg desktop-off mobile-on">
-    <h1>!</h1>
-    <p>
-        Please open in your PC device.<br>
-        This page is not Responsive.
-    </p>
-    <p class="col">
-        We are working on it.
-    </p>
+<div id="loading">
+    <div  class="img-container">
+        <img src="image/circle.gif">
+    </div>
+    
+</div>    
+<div class="cylinder">
+    <div class="greet">
+        <h1>thelocalfeet</h1> 
+        <h3>Who We Are </h3>
+    </div>
 </div>
 
-
-    <!-------------------------------------------------navbar-->  
-        <header  id="home">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="index.html"><h2>thelocalfeet</h2></a>
-                </div>
-                <nav>
-                    <ul>
-                        
-                        <li><a href="Explore.html" >  Explore     </a></li>
-                        <li><a href="Photography.html" >  Photography     </a></li>
-                        <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
-                        <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
-                        
-                    </ul>  
-                </nav>
+<!---------------------------------------------------navigation bar mob-->        
+<headnav>
+    <div class="mob-logo">
+        <h3>thelocalfeet</h3>
+    </div>
+    
+        <div id="menu" class="desktop-off">
+            <div id="pencet" >
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-        </header>
+        </div>
+
+</headnav>
+<div class="navigation navmob" >
+    <a href="index.html" >  Home     </a>
+    <a href="Explore.html" >  Explore     </a>
+    <a href="Photography.html" >  Photography     </a>
+    <a href="Travel-Tips.html" >  Travel tips & planning   </a>
+    <a href="Travel-Inspiration.html" >  Travel inspiration   </a>
+</div>  
+<!----------------------------------------------Navigation bar-->        
+
+<header>
+<div class="cylinder navbar-top">
+    <div class="logo-top">
+        <a href="index.html"><h2>thelocalfeet</h2></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="Explore.html#location" >  Explore     </a></li>
+            <li><a href="Photography.html" >  Photography     </a></li>
+            <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
+            <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
+        </ul>
+    </nav>
+</div>
+</header>       
 
 <!--------------------------------------------------------landing Page-->        
 
-        <section class="landing">
-            <div class="content">
-                
-                <h1 class="para">Why thelocalfeet?</h1>
-                
-                
-                <p class="para2">Being a tourist is fine, vacations are great. But, have you ever thought to experience a place as local people do? What if you want to shed off some limitations of monopoly traveling and turn yourself into an explorer to absorb the culture, food, activities of the hidden local trail in any corner of the world?</p>
-                    
-                
-            </div>    
-            <div class="connect">
-                <div class="connect-img">
-                    <a href="#testimony" class="connect-btn">
-                        <img class="btn-img" src="image/grppic.jpg">
-                    </a>
-                </div>
-                <div class="connect-msgline">
-                    <p class="connect-msg" >You might not always fit in to experience the offbeat travel, but you must try😊. 
+        <section class="landing"> 
+            <div class="landing-intro cylinder">
+                <div class="content">
+                    <h1>Why thelocalfeet?</h1>
+                    <p>Being a tourist is fine, vacations are great. But, have you ever thought to experience a place as
+                       local people do? What if you want to shed off some limitations of monopoly traveling and turn yourself
+                       into an explorer to absorb the culture, food, activities of the hidden local trail in any corner of the world?
+                    </p>
+                </div>    
+                <div class="connect-msg">
+                    <p>You might not always fit in to experience the offbeat travel, but you must try😊. 
                     <span>Follow thelocalfeet, conceptualized by Mayuri & Shubha in 2018 to get more insight into sustainable travel.</span> 
                     </p>
                 </div>
-            </div>   
-            <img class="rellax land" data-rellax-speed='-12' src="image/H.jpg">
-            <div class="scroll-downs">
-                <div class="mousey">
-                  <div class="scroller"></div>
-                </div>
             </div>
+            <img class="rellax land" data-rellax-speed='-12' src="image/H.jpg">
+            
         </section>
 
 <!------------------------------------------------------------2nd Page-->
 
-        <div class="second">
+        <div class="cylinder second">
            
                 <h3 data-aos="fade-up" >
                     What interests us about travel?
@@ -107,7 +107,7 @@
 
 <!-------------------------------------------------------------------3rd page-->
         
-        <div class=" Journey" >
+        <div class="cylinder Journey" >
             <div class="boxflex">
                 <h3 data-aos="fade-right" >
                     Our Journey:
@@ -121,99 +121,100 @@
             </div>
             
             <div class="Bnw">
-                <img class="rellax" data-rellax-speed='1'src="image/j.jpg">
+                <img src="image/j.jpg">
             </div>
             
 <!---------------------------------------------------------------------Form page-->        
         </div>
         
-        <div id="contact" class="third">
-            <div class="container">
-                <h1 class="contact">Contact us</h1>
-                <div id="error"></div>
-                <form autocomplete="off"  id="myform" action="https://formspree.io/f/xknpgerl" onsubmit = "return validate();" method="post">      
-                    <input name="name" id="name" type="text" class="feedback-input" autocomplete="off"  placeholder="Name" />   
-                    <input name="email" id="email" type="text" class="feedback-input" autocomplete="off"  placeholder="Email" />
-                    <input class="feedback-input" type="tel" id="phone" name="phone" autocomplete="off"  placeholder="Contact No">
-                    <textarea name="text" id="msg" class="feedback-input" placeholder="Your Message"></textarea>
-                    <input type="submit"  value="SUBMIT">
-                </form>
-            </div>
-        </div>
+        
 
 <!----------------------------------------------------------------------Social connect-->        
-<div class="testmain">
-    <div id="testimony" class="testimony">
-        <div class="im2" >
-            <img data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine" oncontextmenu="return false" src="image/unnamed.jpg">
-        </div>
-        <div class="blurp">
-            
-            <div class="text">
-                <h1 data-aos="fade-down" >About us</h1>
-                <p>Mayuri and Shubha, the Storyteller-Photographer duo have been traveling places around the world, since tying the knot in 2014: 2 continents, 4 countries, and countless cities. 
-                    Explore with us to see this beautiful mama earth! 
-                </p>
-            </div>
-            <div class="im">
-                <img data-aos="fade-zoom-in"
-                data-aos-easing="ease-in-back"
-                data-aos-delay="300"
-                data-aos-offset="0" oncontextmenu="return false" src="image/grppic.jpg">
-            </div>
-            
-        
-        </div>
-       
+
+
+<div class="cylinder testimony">
+    <div class="main">
+        <img src="image/unnamed.jpg">
     </div>
-    <div class="pack">
-                   
+    <div class="content-right">
+        <h1>About us</h1>
+        <p>Mayuri and Shubha, the Storyteller-Photographer duo have
+            been traveling places around the world, since tying the knot in 2014:
+             2 continents, 4 countries, and countless cities. 
+            Explore with us to see this beautiful mama earth ! 
+        </p>
+        <h2>Follow us</h2>
         <div class="box">
             <p>Shubha Kumar Haldar</p>
-            <div class="link">
-                <a href="https://www.facebook.com/profile.php?id=100000803465465" class="fa fa-facebook falink"></a>
-                <a href="https://www.instagram.com/thelocalfeet/?hl=en" class="fa fa-instagram falink"></a>
-            </div>
+            
+                
+                  <div class="sm-menu">
+                    <a href="https://www.facebook.com/thelocalfeet"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/thelocalfeet/"><i class="fab fa-instagram"></i></a>
+                  </div>
+                
+           
         </div>
         <div class="box">
-            <p>Mayuri Sarkar</p>
-            <div class="link">
-                <a href="https://www.facebook.com/mayuri.sarkar.9" class="fa fa-facebook falink"></a>
-                <a href="https://www.instagram.com/mayuri_thelocalfeet/" class="fa fa-instagram falink"></a>
-            </div>
+            <p>Mayuri Sarker</p>
+            
+                
+                  <div class="sm-menu">
+                    <a href="https://www.facebook.com/mayuri.sarkar.9"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/mayuri_thelocalfeet/"><i class="fab fa-instagram"></i></a>
+                  </div>
+                
+           
+        </div>
+    </div>
+</div>
+
+
+<div id="contact" class="cylinder third">
+    <div class="container">
+        <h1 class="contact">Contact us</h1>
+        <div id="error"></div>
+        <form autocomplete="off"  id="myform" action="https://formspree.io/f/xknpgerl" onsubmit = "return validate();" method="post">      
+            <span class="uppercase">Full Name</span>
+            <input name="name" id="name" type="text" class="feedback-input" autocomplete="off"   />   
+            
+            <span class="uppercase text-sm text-gray-600 font-bold">Email</span>
+            <input name="email" id="email" type="text" class="feedback-input" autocomplete="off" />
+            
+            <span class="uppercase text-sm text-gray-600 font-bold">Contact No.</span>
+            <input class="feedback-input" type="tel" id="phone" name="phone" autocomplete="off" >
+
+            <span class="uppercase text-sm text-gray-600 font-bold">Your Message</span>
+            <textarea name="text" id="msg" class="feedback-input"></textarea>
+            <input type="submit"  value="SUBMIT">
+        </form>
+    </div>
+</div>
+
+<!-----------------------------------------------------footer----->
+<div class="footer">
+    <div class="cylinder about4">
+        <div class="logo">
+            <a href="#home">thelocalfeet</a>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html" >  Home   </a></li>
+                <li><a href="Explore.html" >  Explore     </a></li>
+                <li><a href="Photography.html" >  Photography     </a></li>
+                <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
+                <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
+            </ul>  
+        </div>
+        <div class="copyright">
+            <p>&copy;2021 thelocalfeet. All rights reserved.</p>
         </div>
     </div>
 </div>
         
-<!--<hr class="hr-4">  -->     
-<!-------------------------------------------------Footer-->            
+       
 
-        
-        <div class="about4">
-            <div class="brand">
-                <a href="#home"><h2>thelocalfeet</h2></a>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li><a href="index.html" >  Home   </a></li>
-                    <li><a href="Explore.html" >  Explore     </a></li>
-                    <li><a href="Photography.html" >  Photography     </a></li>
-                    <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
-                    <li><a  href="Travel-Inspiration.html" >  Travel inspiration   </a></li>
-                    
-                </ul>  
-            </div>
-    <!--    <div class="icon">
-                <a href="https://www.facebook.com/thelocalfeet" class="fa fa-facebook"></a>
-                <a href="https://www.instagram.com/thelocalfeet/?hl=en" class="fa fa-instagram"></a>
-            </div>-->
-            <div class="copyright">
-                <p>&copy;2021 thelocalfeet. All rights reserved.</p>
-            </div>
-        </div>
-      
+
         <script src="rellax.min.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   
@@ -225,6 +226,33 @@
                 once: true, 
                 mirror: false,
             });
+
+            const mobNav = document.querySelector("headnav");
+window.addEventListener("scroll",() =>{
+                console.log(scrollY)
+                mobNav.classList.toggle("sticky", window.scrollY > 799);
+            });
+
+
+
+
+
+
+
+            const clickx= document.getElementById('pencet');
+
+clickx.addEventListener('click', ()=>{
+  clickx.classList.toggle('simple');
+});
+
+const clicky= document.getElementById('menu');
+
+const menu = document.querySelector('.navigation');
+clicky.addEventListener('click', ()=>{
+    menu.classList.toggle('Diam');
+    
+});
+
             //...........form............//
 
             function validate(){
