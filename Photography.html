@@ -4,30 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <title>Photography</title>
+    <title>THELOCALFEET | Photography</title>
     <link rel="stylesheet" href="CSS/photography.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 </head>
 <body onload="myFunction()">
 
 <!----------------------------------------------------Loading-->  
-    <div id="loading">
-      <img src="image/ph.gif">
-    </div>
-    <div class="greet">
-      <h1>thelocalfeet</h1> 
-      <h3>Photography</h3>
-    </div>
+   
+   
+  <div id="loading">
+      <div  class="img-container">
+        <img src="image/ph.gif">
+      </div>
+      
+  </div>    
+          <div class="cylinder">
+            <div class="greet">
+              <h1>thelocalfeet</h1> 
+              <h3>Photography</h3>
+            </div>
+          </div>
 
-<!----------------------------------------------------------Navbar-->    
+       <!---------------------------------------------------navigation bar mob-->        
+       <headnav>
+        <div class="mob-logo">
+            <h3>thelocalfeet</h3>
+        </div>
+        
+            <div id="menu" class="desktop-off">
+                <div id="pencet" >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+            </div>
+    
+    </headnav>
+    <div class="navigation navmob" >
+        <a href="index.html" >  Home     </a>
+        <a href="Explore.html" >  Explore     </a>
+        <a href="Travel-Tips.html" >  Travel tips & planning   </a>
+        <a href="Travel-Inspiration.html" >  Travel inspiration   </a>
+        <a href="AboutUs.html" >  About us   </a></li>
+    </div>  
+    
+    <!--------------------------------------------Navigation bar-->        
     <header>
-        <div class="navbar">
-            <div class="logo">
+        <div class="cylinder navbar-top">
+            <div class="logo-top">
                 <a href="index.html"><h2>thelocalfeet</h2></a>
             </div>
             <nav>
-                <ul>
+              <ul>
                 
                 <li><a href="Explore.html" >  Explore     </a></li>
                 <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
@@ -36,27 +65,25 @@
                 </ul>  
             </nav>
         </div>
-    </header>
-
+      </header>           
+    
 <!---------------------------------------------------------------Landing Page-->    
     <section id="home" class="landing">
-        <div class="content">
-            <div class="para">
-                <h1 class="paraboy2">Photography</h1>
-            </div>
-            <p > can be a speaker of an introvert soul</p>
-            
+      
+      <div class="land-page">
+        <div class="cylinder content">
+
+          <h1>Photography</h1>
+          <p> can be a speaker of an introvert soul</p>
+          
         </div>
         <div class="rellax slideshowContainer" data-rellax-speed='1'>
-  
-            
-              <img class="imageSlides img1" src="./Photography/landing1.jpeg" alt="beach side city view">
-              <img class="imageSlides img2" src="./Photography/landing2.jpeg" alt="leaf on the ground">
-              <img class="imageSlides img3" src="./Photography/landing3.jpeg" alt="lake surrounded by mountains">
-              
-
-              
+            <img class="imageSlides img1" src="./Photography/landing1.jpeg" alt="beach side city view">
+            <img class="imageSlides img2" src="./Photography/landing2.jpeg" alt="leaf on the ground">
+            <img class="imageSlides img3" src="./Photography/landing3.jpeg" alt="lake surrounded by mountains">
         </div>
+      </div>
+        
     </section>
 
     
@@ -65,10 +92,8 @@
     <section  class="gallery">
 
         <h2 id="name"  class="gallery-title">Gallery</h2>
-      
-      
-      
-        <div oncontextmenu="return false" class="gallery-images">
+
+        <div oncontextmenu="return false" class="cylinder gallery-images">
       
       
           <figure class="gallery-image">
@@ -311,31 +336,27 @@
       </section>
 
 
-<!-------------------------------------------------Footer-->
+<!-----------------------------------------------------footer----->
+<div class="footer">
+  <div class="cylinder about4">
+      <div class="logo">
+          <a href="#home">thelocalfeet</a>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="index.html" >  Home  </a></li>
+          <li><a href="Explore.html" >  Explore     </a></li>
+          <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
+          <li><a  href="Travel-Tips.html" >  Travel inspiration   </a></li>
+          <li><a href="AboutUs.html#contact" >  Contact us   </a></li>
+        </ul>  
+      </div>
+      <div class="copyright">
+          <p>&copy;2021 thelocalfeet. All rights reserved.</p>
+      </div>
+  </div>
+</div>
 
-    <hr class="hr-1">
-    <div class=" about4">
-        <div class="logo">
-            <a href="#home">thelocalfeet</a>
-        </div>
-        <div class="navba">
-            <ul>
-              <li><a href="index.html" >  Home  </a></li>
-              <li><a href="Explore.html" >  Explore     </a></li>
-              <li><a href="Travel-Tips.html" >  Travel tips & planning   </a></li>
-              <li><a  href="Travel-Tips.html" >  Travel inspiration   </a></li>
-              <li><a href="AboutUs.html#contact" >  Contact us   </a></li>
-            </ul>  
-        </div>
- <!--   <div class="icon">
-            <a href="https://www.facebook.com/thelocalfeet" class="fa fa-facebook"></a>
-            <a href="https://www.instagram.com/thelocalfeet/?hl=en" class="fa fa-instagram"></a>
-        </div>-->
-        <div class="copyright">
-            <p>&copy;2021 thelocalfeet. All rights reserved.</p>
-        </div>
-    </div>
-    <hr class="hr-1 hr-end">
 
     <script src="rellax.min.js"></script>
     <script type="text/javascript">
@@ -346,14 +367,26 @@
             function myFunction(){
                 preloader.style.opacity='0';
             } 
-//////////////////////////////////////gallery name/////////////////////////////
 
-            window.addEventListener("scroll",function(){
-                var fade = document.querySelector("nav");
-                console.log(scrollY)
-                fade.classList.toggle("sticky", window.scrollY > 99);
-                fade.classList.toggle("stickz", window.scrollY > 2375);
-            });
+
+//mobile menu//////////////////////////////////////////////////////
+
+const clickx= document.getElementById('pencet');
+
+clickx.addEventListener('click', ()=>{
+  clickx.classList.toggle('simple');
+});
+
+const clicky= document.getElementById('menu');
+
+const menu = document.querySelector('.navigation');
+clicky.addEventListener('click', ()=>{
+    menu.classList.toggle('Diam');
+    
+});
+
+
+//////////////////////////////////////gallery name/////////////////////////////
 
 // IMAGE SLIDES & COUNTER////////////////////////////////////////////
 
