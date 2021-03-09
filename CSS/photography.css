@@ -497,28 +497,31 @@ img {
 }
 /**************************************************************************************/
 
-/*************************************************************Hr tages***************************************/
-hr {
-  background-color: rgb(0, 0, 0);
-  padding: 0;
-  margin: 0px 10px;
+.social.media {
+  position: relative;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-hr.hr-1 {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(
-    to right,
-    rgb(255 255 255 / 0%),
-    rgb(255 255 255 / 31%),
-    rgb(255 255 255 / 0%)
-  );
+.social.media h3 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
 }
-hr.hr-1.top {
-  margin-top: 0px;
+.menu {
+  text-align: center;
+  width: 130px;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 8px;
+  display: flex;
+  transition: 0.3s;
 }
-hr.hr-end {
-  margin: 10px;
+.menu a {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
 }
 /****************************************************************************************************/
 /*****************************************Footer*************************************************/
@@ -612,6 +615,9 @@ hr.hr-end {
   .gallery-title {
     padding: 4rem;
     text-align: left;
+  }
+  .social.media {
+    align-items: flex-start;
   }
 }
 @media (max-width: 1050px) {
@@ -718,6 +724,17 @@ hr.hr-end {
 @media (max-width: 600px) {
   .land-page {
     height: 100vh;
+  }
+  .gallery-image__preview .gallery-image__caption {
+    line-height: 23px;
+  }
+  .gallery-image__media:hover {
+    transform: scale(1);
+    opacity: 1;
+  }
+  .menu {
+    width: 90px;
+    padding-left: 0;
   }
   .gallery {
     padding-bottom: 50px;
